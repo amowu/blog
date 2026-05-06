@@ -140,7 +140,7 @@ async function setupFairPlay(video, certUrl) {
     // 1. 取得 FairPlay 的 Key System
     const access = await navigator.requestMediaKeySystemAccess('com.apple.fps', [{
       initDataTypes: ['skd'], // FairPlay 常用 skd 或 sinf
-      videoCapabilities: [{ contentType: 'application/vnd.apple.mpegurl' }]
+      videoCapabilities: [{ contentType: 'video/mp4; codecs="avc1.42E01E"' }]
     }]);
     
     const keys = await access.createMediaKeys();
