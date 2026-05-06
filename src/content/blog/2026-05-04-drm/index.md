@@ -31,7 +31,7 @@ DRM 的運作包含三個核心機制：
 
 * EME（Encrypted Media Extensions）：它是播放器與 CDM 之間的「橋樑」。作為 W3C 標準的 API，它負責將密鑰請求傳給伺服器，再把拿到的許可證傳回給 CDM。
 * MSE（Media Source Extensions）：負責將下載下來的加密影片片段（Segments）源源不絕地餵入播放器中。
-* PSSH（Protection System Specific Header）：這是埋在影片流中的資訊，包含了重要的「金鑰 ID（Key ID）」。沒有 PSSH，CDM 根本不知道該去哪個 License Server 申請鑰匙。
+* PSSH（Protection System Specific Header）：這是埋在影片流中的資訊，包含了重要的「金鑰 ID（Key ID）」。沒有 PSSH，CDM 不知道需要哪把金鑰，也無法生成正確的 Challenge。
 
 ![](./image1.png)
 
