@@ -75,7 +75,24 @@ Medium 頁面的關鍵 HTML 結構：
 ### Step 4：圖片處理
 
 **重要：WebFetch 不執行 JavaScript，無法取得動態載入的圖片 URL。**
-必須改用 Playwright 抓取實際渲染後的圖片清單：
+
+取得圖片 URL 的方法，依優先順序嘗試：
+
+**方法一（優先）：Medium `?format=json` API**
+
+Medium 有隱藏的 JSON endpoint，直接回傳結構化資料含圖片 URL，不需要 JS：
+
+```bash
+curl -s "https://medium.com/@user/article-slug?format=json" \
+  | sed 's/])}while(1);<<//' \
+  | jq '[.payload.value.content.bodyModel.paragraphs[] | select(.metadata.id != null) | "https://miro.medium.com/v2/resize:fit:700/" + .metadata.id]'
+```
+
+若文章用自訂域名（如 blog.amowu.com），改用原始 medium.com URL 加 `?format=json`。
+
+**方法二：Playwright（JSON API 失效時使用）**
+
+改用 Playwright 抓取實際渲染後的圖片清單：
 
 ```js
 // Step A：取得所有文章內圖片 URL
