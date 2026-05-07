@@ -63,7 +63,7 @@ Medium 頁面的關鍵 HTML 結構：
 | `<hr>`, `<div role="separator">` | `---` |
 | `<figure>` with `<img>` | `![figcaption text](./imageN.ext)` |
 | `<img>` without figure | `![alt](./imageN.ext)` |
-| `<figcaption>` | 作為上面圖片的 alt text，或在圖片下方加一行 italic：`*caption*` |
+| `<figcaption>` | 作為上面圖片的 alt text，或緊接在圖片下一行（**不空行**）加 italic：`*caption*` |
 
 **特別注意：**
 - Medium 用 `<mark>` 做 highlight，轉換成 `==text==`（或保留為粗體）
