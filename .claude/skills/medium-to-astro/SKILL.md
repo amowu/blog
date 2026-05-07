@@ -60,14 +60,14 @@ Medium 頁面的關鍵 HTML 結構：
 | `<blockquote>` | `> ` |
 | `<ul><li>` | `* ` |
 | `<ol><li>` | `1. ` |
-| `<hr>` | `---` |
+| `<hr>`, `<div role="separator">` | `---` |
 | `<figure>` with `<img>` | `![figcaption text](./imageN.ext)` |
 | `<img>` without figure | `![alt](./imageN.ext)` |
 | `<figcaption>` | 作為上面圖片的 alt text，或在圖片下方加一行 italic：`*caption*` |
 
 **特別注意：**
 - Medium 用 `<mark>` 做 highlight，轉換成 `==text==`（或保留為粗體）
-- Medium 的分隔線通常是 `<hr>` 或裝飾性 `<div>`，轉換成 `---`
+- Medium 的分隔線實際上是 `<div role="separator">`（不是 `<hr>`），轉換成 `---`
 - 去除 Medium 特有的 tracking 參數（如 `?source=...`）
 - 內嵌的 Medium 文章連結（gist、tweet embed 等）保留為純連結
 - 段落之間保留空行
