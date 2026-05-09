@@ -26,7 +26,7 @@ heroImage: './cover.png'
 
 這篇是第二篇，介紹《Automate browser testing with tools and best practices from Chrome》，第一篇可以點擊下方連結前往。
 
-[Real-time Server Components](https://blog.amowu.com/real-time-server-components-4eb73fc04ad6)
+[Real-time Server Components](https://blog.amowu.com/posts/2024-06-08-real-time-server-components/)
 
 ### 自動化測試的重要性及其優勢
 

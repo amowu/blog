@@ -30,7 +30,7 @@ heroImage: './cover.png'
 
 ![](./image3.png)
 
-不同於一般市面上複雜的專案管理軟體，[Trello](https://zh.wikipedia.org/wiki/Scrum) 是一個簡單易用的 [Scrum](https://zh.wikipedia.org/wiki/Scrum) board，之前 [Development Tools](https://blog.amowu.com/2012/08/development-tools.html)這篇文章有稍微介紹，而我目前就是使用它來管理新專案，試用兩個月下來，感覺還不錯。
+不同於一般市面上複雜的專案管理軟體，[Trello](https://zh.wikipedia.org/wiki/Scrum) 是一個簡單易用的 [Scrum](https://zh.wikipedia.org/wiki/Scrum) board，之前 [Development Tools](https://blog.amowu.com/posts/2012-08-02-development-tools/)這篇文章有稍微介紹，而我目前就是使用它來管理新專案，試用兩個月下來，感覺還不錯。
 
 ![](./image4.png)
 

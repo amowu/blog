@@ -23,7 +23,7 @@ heroImage: './cover.jpeg'
 
 *（註：這裡的 hacker 是指那些最優秀的軟體工程師，惡意入侵電腦系統的人應該被稱為 cracker）*
 
-[重點筆記《Hackers and Painters》](https://medium.com/@amowu/hackers-and-painters-175da330d5a4)
+[重點筆記《Hackers and Painters》](https:blog.amowu.com/posts/2013-10-01-hackers-and-painters/)
 
 這看起來很美好，我也嚮往這樣的「Hacker 精神」。但隨著工作的時間久了，我開始覺得工程師與藝術家還是有本質上的不同。
 
@@ -59,7 +59,7 @@ heroImage: './cover.jpeg'
 
 大家喜愛日本製造、德國製造或是瑞士製造的精品，這背後都是工匠精神的體現，我也曾借此在《殺雞用牛刀》一文聊過 Google 和 Facebook 兩家截然不同的工程文化。
 
-[殺雞用牛刀](https://medium.com/the-songs-of-distant-earth/weekly-006-4a1b495dc103)
+[殺雞用牛刀](https://blog.amowu.com/posts/2019-01-21-weekly-006/)
 
 綜上所述，工程師的不同之處在於：
 

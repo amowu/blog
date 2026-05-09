@@ -6,7 +6,7 @@ pubDate: 'Aug 20 2009'
 
 ---
 
-距離上一篇 [Strategy pattern 策略模式](https://blog.amowu.com/2009/05/strategy-pattern_20.html) 已經兩個多月了，一直拖到現在才生出這篇文章…orz。
+距離上一篇 [Strategy pattern 策略模式](https://blog.amowu.com/posts/2009-05-20-strategy-pattern-20/) 已經兩個多月了，一直拖到現在才生出這篇文章…orz。
 
 其實這篇 工廠模式應該要當作第一篇 Design pattern 的文章會比較好，因為這個模式很容易懂，但是 工廠模式中又細分出一些其他類似的模式，例如 抽象工廠模式 ，所以我把一些相關的資料都讀了一遍後，分三篇作介紹。
 

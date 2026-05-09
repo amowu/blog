@@ -13,7 +13,7 @@ heroImage: './cover.png'
 
 身為負責公司學習平台 VOD 建置的工程師，我常被問到：在技術如此發達的今天，為什麼我們還能看到盜版資源？為什麼有些設備就是跑不出 4K？這背後其實是持續多年的技術拉鋸戰。本文將帶你拆解 DRM 的運作核心，並揭開 2026 年即將普及的 AI 隱形浮水印技術，看看這場防盜技術的攻防戰如何演進。
 
-https://blog.amowu.com/hls-signed-cookies-4c1194920eb1
+https://blog.amowu.com/posts/2020-09-04-hls-signed-cookies/
 
 ## 別誤會，DRM 不只是「加密」那麼簡單
 

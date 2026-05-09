@@ -9,7 +9,7 @@ heroImage: './cover.png'
 
 ![](./cover.png)
 
-2017 年初的時候，曾經寫了《[如何自動化 release 的流程？](https://blog.amowu.com/2017/01/how-to-automate-js-release.html)》這篇文章，介紹了如何利用 [semantic-release](https://github.com/semantic-release/semantic-release) 和 [TravisCI](https://travis-ci.org/) 自動化 GitHub Releases 和 NPM publish 這件事。這次要介紹的是如何直接透過 [Probot](https://probot.github.io/) 機器人做到 GitHub Releases。
+2017 年初的時候，曾經寫了《[如何自動化 release 的流程？](https://blog.amowu.com/posts/2017-01-24-how-to-automate-js-release/)》這篇文章，介紹了如何利用 [semantic-release](https://github.com/semantic-release/semantic-release) 和 [TravisCI](https://travis-ci.org/) 自動化 GitHub Releases 和 NPM publish 這件事。這次要介紹的是如何直接透過 [Probot](https://probot.github.io/) 機器人做到 GitHub Releases。
 
 ### 大綱
 

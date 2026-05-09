@@ -134,5 +134,5 @@ Apple 的審核人員給了我們兩個建議：
 * [In-App Purchase](https://developer.apple.com/in-app-purchase/)
 * [App 内购买项目](https://developer.apple.com/cn/in-app-purchase/)
 * [最前线｜苹果禁售前员工新书，称其透露了App Store的“重大商业机密”](https://www.36kr.com/p/5293547?ktm_source=feed)
-* [蘋果前員工出了本App Store的新書，蘋果抓狂要求禁售：書中「透露 App Store 重大商業機密」](https://blog.amowu.com/p/9a1bb952-4bae-4dba-8ffc-fd7a23330491/[https://www.techbang.com/posts/76318-former-apple-employee-sits-on-new-book-on-app-store-secrets-apple-jumps-to-ask-for-ban-book-reveals-app-store-major-trade-secrets])
+* [蘋果前員工出了本App Store的新書，蘋果抓狂要求禁售：書中「透露 App Store 重大商業機密」](https://www.techbang.com/posts/76318-former-apple-employee-sits-on-new-book-on-app-store-secrets-apple-jumps-to-ask-for-ban-book-reveals-app-store-major-trade-secrets)
 * [You Download the App and it Doesn’t Work](https://youdownloadtheappanditdoesntwork.com/)
