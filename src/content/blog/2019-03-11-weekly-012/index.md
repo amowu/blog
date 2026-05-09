@@ -5,10 +5,6 @@ pubDate: 'Mar 11 2019'
 heroImage: './cover.jpg'
 ---
 
----
-
-![](./cover.jpg)
-
 ### 文摘
 
 #### 《千面英雄》

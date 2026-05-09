@@ -5,10 +5,6 @@ pubDate: 'Oct 14 2015'
 heroImage: './cover.jpg'
 ---
 
----
-
-![](./cover.jpg)
-
 這是一篇勉勵我自己如何實行 GTD & Creative Routines 的一套方法。
 
 前言

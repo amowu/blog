@@ -5,10 +5,6 @@ pubDate: 'Apr 22 2019'
 heroImage: './cover.jpg'
 ---
 
----
-
-![](./cover.jpg)
-
 HBO 當家美劇《權力遊戲》終於迎來了最終季，在上周開始全球播映。
 
 首集上線之後馬上就創造了 5,500 萬次的「[盜版收視](https://www.theverge.com/2019/4/17/18412159/game-of-thrones-got-season-8-premiere-pirated-55-million-times-first-24-hours-hbo)」。而相較於盜版來源，官方的收看來源總計也不過 1,740 萬名觀眾。

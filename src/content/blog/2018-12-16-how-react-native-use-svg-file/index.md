@@ -5,10 +5,6 @@ pubDate: 'Dec 16 2018'
 heroImage: './cover.png'
 ---
 
----
-
-![](./cover.png)
-
 ### 問題
 
 1. React Native 提供的 [Image](https://facebook.github.io/react-native/docs/image.html) 無法使用 .svg 向量圖檔

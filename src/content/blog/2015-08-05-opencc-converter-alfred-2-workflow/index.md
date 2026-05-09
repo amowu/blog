@@ -5,11 +5,7 @@ pubDate: 'Aug 05 2015'
 heroImage: './cover.png'
 ---
 
----
-
 從以前就在找一個可以簡繁互換的 Alfred workflow，可惜一直沒找到滿意的，所以一直以來都是用 Yahoo 的輸入法來切換模式。結果前幾天突然看到 [OpenCC](https://github.com/BYVoid/OpenCC) 這個開源項目，而且還有 Python 的庫可以用！二話不說就自己來寫一個了，以下是節自我的 GitHub [alfred-chinese-converter](https://github.com/amowu/alfred-chinese-converter) v1.0.0 的 README。
-
-![](./cover.png)
 
 ### Introduction 介紹
 

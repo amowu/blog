@@ -5,11 +5,7 @@ pubDate: 'Jul 05 2020'
 heroImage: './cover.jpeg'
 ---
 
----
-
 藝術家、科學家、發明家還有工匠，相比工程師有什麼不同之處？
-
-![](./cover.jpeg)
 
 前陣子， [Redis](https://redis.io/) 的作者 antirez [宣佈](http://antirez.com/news/133) 退出維護團隊。理由大致如下：
 

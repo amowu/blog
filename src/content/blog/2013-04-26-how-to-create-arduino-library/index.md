@@ -5,10 +5,6 @@ pubDate: 'Apr 26 2013'
 heroImage: './cover.jpg'
 ---
 
----
-
-![](./cover.jpg)
-
 假設要寫一個摩斯密碼（telegraph）的 library：
 
 1. 先在 Arduino 目錄底下（預設是`/Users/XXX/Documents/Arduino`）建立一個 `libraries` 資料夾

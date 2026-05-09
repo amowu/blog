@@ -5,12 +5,7 @@ pubDate: 'Jun 08 2024'
 heroImage: './cover.png'
 ---
 
----
-
 打破無狀態伺服器的限制：利用 Durable Objects 和 React Server Components 構建即時多人應用
-
-![Generated with DALL·E](./cover.png)
-*Generated with DALL·E*
 
 #### 前言
 

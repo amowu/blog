@@ -4,8 +4,6 @@ description: '一般 Flash 程式開發時，取資源的方式有兩種：'
 pubDate: 'Mar 06 2013'
 ---
 
----
-
 一般 Flash 程式開發時，取資源的方式有兩種：
 
 * .swf

@@ -5,10 +5,6 @@ pubDate: 'Mar 10 2014'
 heroImage: './cover.png'
 ---
 
----
-
-![](./cover.png)
-
 ### 概要
 
 這篇文章主要是說明如何寫 AngularJS 的 service，以類似 `[$resource](http://code.angularjs.org/1.2.6/docs/api/ngResource.%24resource)` REST 的方式來取得 Google 試算表的資料。

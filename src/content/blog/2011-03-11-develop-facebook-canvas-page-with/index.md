@@ -4,8 +4,6 @@ description: '這篇文章是介紹如何使用 CodeIgniter 這個 PHP Framework
 pubDate: 'Mar 11 2011'
 ---
 
----
-
 **這篇文章是介紹如何使用 CodeIgniter 這個 PHP Framework 來初步架構出 MVC 的環境, 並且開發一個簡單的 Facebook Canvas Page。**
 
 什麼是 CodeIgniter 呢？

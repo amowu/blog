@@ -5,8 +5,6 @@ pubDate: 'Mar 04 2019'
 heroImage: './cover.png'
 ---
 
----
-
 物理學家主張他們的研究領域是最基礎的科學。畢竟生物學、工程學、化學等等都必須依賴物理學中的物質、能量和交互作用。
 
 但美國科學家 [Robert Lanza](https://en.wikipedia.org/wiki/Robert_Lanza) 認為，生物學才是宇宙的核心科學。他稱自己的理論為 [生物中心論](https://en.wikipedia.org/wiki/Robert_Lanza) （Biocentrism）。
@@ -97,5 +95,3 @@ heroImage: './cover.png'
 > 謝謝你玩我的遊戲*
 
 > ―― 哈勒代
-
-![](./cover.png)

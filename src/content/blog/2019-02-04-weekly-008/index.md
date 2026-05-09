@@ -5,8 +5,6 @@ pubDate: 'Feb 04 2019'
 heroImage: './cover.jpg'
 ---
 
----
-
 古人有「立德」、「立功」、「立言」三不朽之説，認為最完美的人生境界就是在道德、文章及功業方面均有建樹，此為真「[三不朽](https://zh.wikipedia.org/wiki/%E4%B8%89%E4%B8%8D%E6%9C%BD)」。
 
 據説在中國歷史上，只有兩個半人能達到三不朽境界，一個是儒家創始人[孔子](https://zh.wikipedia.org/wiki/%E5%AD%94%E5%AD%90)，另一個是明代著名思想家[王陽明](https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%AE%88%E4%BB%81)，還有剩下的半個是清朝中興名臣[曾國藩](https://zh.wikipedia.org/wiki/%E6%9B%BE%E5%9B%BD%E8%97%A9)。

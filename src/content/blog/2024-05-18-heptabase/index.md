@@ -5,10 +5,6 @@ pubDate: 'May 18 2024'
 heroImage: './cover.png'
 ---
 
----
-
-![](./cover.png)
-
 這是我在公司的前端聚會上分享的主題，介紹 Heptabase 這個筆記工具，以及我如何使用它來完成「Hahow for Business 企業上傳串 JW Player」的研究過程。大綱如下：
 
 1. 前言

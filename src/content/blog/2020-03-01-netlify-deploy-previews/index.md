@@ -5,10 +5,6 @@ pubDate: 'Mar 01 2020'
 heroImage: './cover.png'
 ---
 
----
-
-![](./cover.png)
-
 ### 大綱
 
 * 什麼是「無限環境」？

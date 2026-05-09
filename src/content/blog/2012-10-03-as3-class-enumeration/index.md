@@ -4,8 +4,6 @@ description: '筆記筆記..'
 pubDate: 'Oct 03 2012'
 ---
 
----
-
 筆記筆記..
 
 一般在 AS3 要列舉 Object 的 properties 時，通常會用下面這種寫法：

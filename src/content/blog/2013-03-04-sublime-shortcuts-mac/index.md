@@ -4,8 +4,6 @@ description: 'Default'
 pubDate: 'Mar 04 2013'
 ---
 
----
-
 ### Default
 
 ### General

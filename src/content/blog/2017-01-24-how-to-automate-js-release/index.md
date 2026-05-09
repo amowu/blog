@@ -2,9 +2,6 @@
 title: '如何自動化 release 的流程？'
 description: '這篇文章會介紹如何使用 semantic-release 這個工具，自動化 Node.js (or JavaScript) 專案的版本號，以及 changelog 的 release 流程。'
 pubDate: 'Jan 24 2017'
-heroImage: './cover.png'
----
-
 ---
 
 這篇文章會介紹如何使用 [semantic-release](https://github.com/semantic-release/semantic-release) 這個工具，自動化 Node.js (or JavaScript) 專案的版本號，以及 changelog 的 release 流程。

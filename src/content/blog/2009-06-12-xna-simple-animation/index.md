@@ -4,8 +4,6 @@ description: '因為我的大學專題是寫一款四人網路連線的格鬥遊
 pubDate: 'Jun 12 2009'
 ---
 
----
-
 因為我的大學專題是寫一款四人網路連線的格鬥遊戲，所以對 [XNA](http://zh.wikipedia.org/w/index.php?title=XNA&variant=zh-tw) 這套微軟提供的遊戲開發平台有點研究，之前在痞客邦寫網誌的時候有寫過幾篇這個作品的開發情況，後來因為實在太忙了所以沒有繼續介紹下去，現在這個遊戲已經在去年完成了，也得到不錯的成績，有機會我會 PO 上來分享一些製作心得。
 
 在網誌搬到 Blogger 之後一直沒有機會寫一些跟 XNA 有關的文章，我打算介紹一些 [XNA Creators Club](http://creators.xna.com/en-US/education/catalog/) 教學範例中所使用到的開發技術，國內介紹 XNA 的文章不多，有興趣用 XNA 開發遊戲的人，推薦可以到 [點部落](http://www.dotblogs.com.tw/Team.aspx?GroupID=507) 去看一些不錯的文章。

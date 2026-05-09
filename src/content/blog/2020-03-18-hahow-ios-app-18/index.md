@@ -5,10 +5,6 @@ pubDate: 'Mar 18 2020'
 heroImage: './cover.png'
 ---
 
----
-
-![](./cover.png)
-
 ### 大綱
 
 * 前言
@@ -21,7 +17,7 @@ heroImage: './cover.png'
 
 > 2022/07/20 更新：Hahow 已經有自己的 iOS App 囉 🎊
 
-[‎Hahow 好學校 - 一站式跨域人才學習入口](https://apps.apple.com/tw/app/hahow-%E5%A5%BD%E5%AD%B8%E6%A0%A1-%E6%9C%80%E6%9C%89%E8%B6%A3%E7%9A%84%E7%B7%9A%E4%B8%8A%E8%AA%B2%E7%A8%8B%E5%B9%B3%E5%8F%B0/id1529044948)
+[Hahow 好學校 - 一站式跨域人才學習入口](https://apps.apple.com/tw/app/hahow-%E5%A5%BD%E5%AD%B8%E6%A0%A1-%E6%9C%80%E6%9C%89%E8%B6%A3%E7%9A%84%E7%B7%9A%E4%B8%8A%E8%AA%B2%E7%A8%8B%E5%B9%B3%E5%8F%B0/id1529044948)
 
 ### 前言
 

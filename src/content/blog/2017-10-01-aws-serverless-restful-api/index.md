@@ -5,10 +5,6 @@ pubDate: 'Oct 01 2017'
 heroImage: './cover.png'
 ---
 
----
-
-![](./cover.png)
-
 近幾年在雲架構上討論熱度較高的 2 大主題分別是 **容器化**（Containerize）與 **無伺服器**（Serverless）架構。本篇文章會帶你瞭解什麼是 AWS 無伺服器架構，以及如何使用 Serverless Framework 這個框架，快速開發 RESTful APIs。
 
 ### 大綱

@@ -5,10 +5,6 @@ pubDate: 'Aug 06 2013'
 heroImage: './cover.jpeg'
 ---
 
----
-
-![](./cover.jpeg)
-
 今年是第二次參加[開源人年度聚會 COSCUP](http://coscup.org/)，很幸運的在 47 秒內搶到限量 500 張的門票，和[去年](https://blog.amowu.com/posts/2012-08-19-coscup-2012/)比較不一樣的地方：
 
 * 場地從[中研院](http://hssb.committee.sinica.edu.tw/)換到[國際會議中心](http://www.ticc.com.tw/)，應該是因為人數的關係，不過我猜 TICC 沒有下次了(笑)，期待明年的小巨蛋(誤)。

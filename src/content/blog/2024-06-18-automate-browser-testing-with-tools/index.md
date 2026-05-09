@@ -5,12 +5,7 @@ pubDate: 'Jun 18 2024'
 heroImage: './cover.png'
 ---
 
----
-
 隨著科技的迅速發展，網站和應用程式的複雜性日益增加，對品質和穩定性的要求也變得更加迫切。在這篇文章中，我們將探討自動化測試的重要性、如何在組織中實施自動化測試，以及 Chrome 提供的測試工具和策略。
-
-![Generated with DALL·E](./cover.png)
-*Generated with DALL·E*
 
 ### 前言
 

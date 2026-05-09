@@ -4,8 +4,6 @@ description: '本篇翻譯自 Facebook 開發者頁面 的 App Center Tutorial'
 pubDate: 'Jun 03 2012'
 ---
 
----
-
 本篇翻譯自 [Facebook 開發者頁面](https://developers.facebook.com/) 的 [App Center Tutorial](https://developers.facebook.com/docs/guides/appcenter/)
 
 Facebook App Center 是一個大型的社交應用程式中心。App Center 是協助你的 Facebook Apps、 手機 apps 和使用 Facebook Login 的網站 的管道。Facebook 鼓勵所有開發人員在這個 App Center 建立您的 app 細節內容頁面。

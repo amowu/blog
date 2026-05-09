@@ -4,8 +4,6 @@ description: '我們團隊目前使用 Sentry 這個服務作 error tracking，J
 pubDate: 'Jun 24 2017'
 ---
 
----
-
 我們團隊目前使用 [Sentry](https://sentry.io/) 這個服務作 error tracking，JavaScript 或 React 的基本安裝方法在 [官方文件](https://docs.sentry.io/clients/javascript/integrations/react/) 都可以找到，這裡就不贅述。
 
 同時我們也有在使用 [redux-observable](https://github.com/redux-observable/redux-observable) 這個 RxJS middleware 來處理帶有副作用的 Redux action。

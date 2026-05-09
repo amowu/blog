@@ -5,10 +5,6 @@ pubDate: 'Feb 25 2019'
 heroImage: './cover.jpeg'
 ---
 
----
-
-![](./cover.jpeg)
-
 ### 三皇五帝
 
 考古學上，鑑定文明的標準有三條：

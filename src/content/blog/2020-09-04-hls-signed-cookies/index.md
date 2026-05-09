@@ -5,10 +5,6 @@ pubDate: 'Sep 04 2020'
 heroImage: './cover.png'
 ---
 
----
-
-![](./cover.png)
-
 近來因疫情關係，不少 OTT 與線上教育等影音串流平台的流量急劇上升，本篇文章以 Hahow 為例，帶你了解隨選視訊背後的原理以及如何保護數位內容。
 
 這篇文章會介紹 Hahow for Business 是如何透過 AWS CloudFront 的 Signed Cookies 機制來保護 HLS 格式的串流影片。

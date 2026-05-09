@@ -5,10 +5,6 @@ pubDate: 'Jan 29 2015'
 heroImage: './cover.png'
 ---
 
----
-
-![](./cover.png)
-
 註：這篇文章的原始碼放在 [GitHub](https://github.com/amowu/dotfiles) ，會以上面的更新為主。
 
 如果不清楚什麼是 dotfiles 的話，可以參閱 [善用 dotfiles 個人化自己的工作環境](http://cloudchen.logdown.com/posts/49264746647/dotfiles) ：

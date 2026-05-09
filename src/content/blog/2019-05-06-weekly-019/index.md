@@ -5,13 +5,9 @@ pubDate: 'May 06 2019'
 heroImage: './cover.png'
 ---
 
----
-
 自 1989 年的平成元年算起，持續了約 30 年的「平成時代」已於今年 4 月畫下句點，5 月起由新年號「令和」正式接班。
 
 日本遊戲媒體[週刊ファミ通](https://www.famitsu.com/)日前[公布](https://www.famitsu.com/news/201904/22175124.html)由讀者票選的「平成最佳遊戲」前三名經典作品。
-
-![](./cover.png)
 
 拿下第一名的是 1995 年在 SFC（俗稱：[超任](https://zh.wikipedia.org/wiki/%E8%B6%85%E7%B4%9A%E4%BB%BB%E5%A4%A9%E5%A0%82)）平台發售的《[超時空之鑰](https://zh.wikipedia.org/wiki/%E6%97%B6%E7%A9%BA%E4%B9%8B%E8%BD%AE)》。本作受到 30 歲以上玩家（包括我）一致壓倒性支持，高票獲選。
 

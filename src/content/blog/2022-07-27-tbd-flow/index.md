@@ -5,12 +5,7 @@ pubDate: 'Jul 27 2022'
 heroImage: './cover.png'
 ---
 
----
-
 TBD 是一種版本控制的分支模型（source-control branching model），為了避免傳統 Git workflow 帶來的合併地獄，TBD 規定開發人員只能在被稱作「Trunk」的單一 branch 中提交程式碼，並且限制建立其它會長期存在的 branches。
-
-![Generated with DALL·E](./cover.png)
-*Generated with DALL·E*
 
 ### 前言
 

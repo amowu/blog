@@ -4,8 +4,6 @@ description: '筆記一個 javascript 的特性。'
 pubDate: 'May 15 2012'
 ---
 
----
-
 筆記一個 javascript 的特性。
 
 通常在使用一些 method 的時候參數都帶有 Callback Function：

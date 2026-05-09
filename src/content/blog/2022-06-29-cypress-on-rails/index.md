@@ -5,11 +5,7 @@ pubDate: 'Jun 29 2022'
 heroImage: './cover.png'
 ---
 
----
-
 隨著 Chrome headless 模式的推出，E2E 測試上 CI 已經變得容易。這篇文章分享什麼是 Cypress，為什麼我覺得寫 E2E 測試很重要，以及我們團隊是怎麼跑這個流程的。
-
-![](./cover.png)
 
 這篇文章會介紹 Ruby on Rails 如何配置 CircleCI 運行 Cypress 的 E2E 測試。
 

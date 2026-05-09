@@ -4,8 +4,6 @@ description: '如果用 HTML5 配 WebView 來作 App 的話，在 iPhone4 跟一
 pubDate: 'Mar 04 2012'
 ---
 
----
-
 如果用 HTML5 配 WebView 來作 App 的話，在 iPhone4 跟一些 Android 手機會碰到的解析度問題。
 
 iPhone4 的 Retina 是 960 x 640，但是在 WebView 底下會以 480 x 320 來顯示。

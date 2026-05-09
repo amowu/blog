@@ -5,11 +5,7 @@ pubDate: 'Jun 03 2019'
 heroImage: './cover.jpeg'
 ---
 
----
-
 遠端工作並非一個需要克服的挑戰。而是一個明顯的商業優勢。
-
-![](./cover.jpeg)
 
 > *原文標題：All Remote
 > 原文網址：https://about.gitlab.com/company/culture/all-remote/

@@ -4,8 +4,6 @@ description: '本篇參考 stackoverflow 的 How to list the properties of a jav
 pubDate: 'May 19 2012'
 ---
 
----
-
 本篇參考 [stackoverflow](http://stackoverflow.com/) 的 [How to list the properties of a javascript object](http://stackoverflow.com/questions/208016/how-to-list-the-properties-of-a-javascript-object)
 
 要如何知道 Javascript 物件擁有哪些 proerty?

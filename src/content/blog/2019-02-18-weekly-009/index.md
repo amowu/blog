@@ -5,13 +5,9 @@ pubDate: 'Feb 18 2019'
 heroImage: './cover.jpg'
 ---
 
----
-
 ### 新聞
 
 春節期間，除了「華航罷工」的新聞之外，另有一則「[抽不出國運籤](https://www.cna.com.tw/news/firstnews/201902050089.aspx)」吸引眾人目光。
-
-![](./cover.jpg)
 
 雖然[網路上](https://www.youtube.com/watch?v=FKy8Eb0JasM)已經有人嘗試去解釋其機率的合理性，但是作為茶餘飯後的話題來看，今年沒有「國運」這件事，還是有八卦價值的。
 

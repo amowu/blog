@@ -5,12 +5,7 @@ pubDate: 'Jun 10 2024'
 heroImage: './cover.png'
 ---
 
----
-
 本文將探討哪些問題是 AI 可以解決的，哪些是它無法觸及的。希望通過這篇文章，讀者能夠對計算的本質與 AI 的限制有更清晰的認識，理性看待這項技術的發展。
-
-![Generated with DALL·E](./cover.png)
-*Generated with DALL·E*
 
 #### 前言
 
