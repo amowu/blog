@@ -5,12 +5,7 @@ pubDate: 'Jul 14 2024'
 heroImage: './cover.png'
 ---
 
----
-
 #### 初探 Pact & PactFlow
-
-![Generated with DALL·E](./cover.png)
-*Generated with DALL·E*
 
 不知道大家有沒有聽過「契約測試」這個冷門的概念，它適合兩種對象：
 
@@ -154,12 +149,28 @@ pact-5-minute-getting-started-guide/
 
 ```json
 // package.json
+{
+  ...
+  "dependencies": {
+    "express": "^4.18.2"
+    ...
+  },
+  ...
+}
 ```
 
 測試工具的部分，前端和後端都是使用 mocha 和 chai，以及 Pact 提供的測試 library：
 
 ```json
 // package.json
+{
+  "devDependencies": {
+    "@pact-foundation/pact": "12.1.0",
+    "mocha": "^10.2.0",
+    "chai": "^4.3.7",
+    ...
+  }
+}
 ```
 
 #### 測試流程
