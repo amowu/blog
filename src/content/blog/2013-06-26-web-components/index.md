@@ -68,6 +68,10 @@ heroImage: './cover.png'
 
 ```xml
 <element name="my-component" constructor="MyComponent">
+... 
+<script>
+    var myComponent = new MyComponent();
+</script>
 ```
 
 也可以繼承其他元件：
