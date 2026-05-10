@@ -124,13 +124,7 @@ after_success:
 
 ```xml
 <type>(<scope>): <subject>
-```
-
-```
 <body>
-```
-
-```
 <footer>
 ```
 
@@ -162,11 +156,8 @@ $ git commit -m "feat(video): 影片播放器新增「字幕位置」的選項"
 
 #### Major (or Breaking) Release
 
-```scss
+```bash
 $ git commit -m "pref(...): blablabla...
-```
-
-```
 BREAKING CHANGE: blablabla..."
 ```
 
