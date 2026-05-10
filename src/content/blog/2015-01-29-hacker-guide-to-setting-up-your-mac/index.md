@@ -143,171 +143,247 @@ apps=(
 
 加快視窗 resize 的速度(Cocoa applications)
 
+```bash
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+```
 
 預設展開儲存視窗
 
+```bash
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+```
 
 關閉”你確定要開啟這個應用程式?”詢問視窗
 
+```bash
 defaults write com.apple.LaunchServices LSQuarantine -bool false
+```
 
 開啟觸控板輕觸點擊功能
 
+```bash
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+```
 
 開啟觸控板兩指輕觸彈出右鍵選單功能
 
+```bash
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+```
 
 開啟觸控板三指拖曳功能
 
+```bash
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerDragGesture -bool true
 
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+```
 
 開啟觸控板四指向下滑出現 app expose 功能
 
+```bash
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -int 0
 
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -int 0
 
 defaults write com.apple.dock showAppExposeGestureEnabled -int 1
+```
 
 加快觸控板/滑鼠的速度
 
+```bash
 defaults write NSGlobalDomain com.apple.trackpad.scaling -int 3
 
 defaults write NSGlobalDomain com.apple.mouse.scaling -int 3
+```
 
 開啟所有視窗組件支援鍵盤控制
 
+```bash
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+```
 
 關閉鍵盤按住的輸入限制
 
+```bash
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+```
 
 加快鍵盤輸入
 
+```bash
 defaults write NSGlobalDomain KeyRepeat -int 0
+```
 
 預設 Finder 起始位置為桌面
 
+```bash
 defaults write com.apple.finder NewWindowTarget -string “PfDe”
 
 defaults write com.apple.finder NewWindowTargetPath -string “file://${HOME}/Desktop/”
+```
 
 顯示副檔名
 
+```bash
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+```
 
 顯示 Finder 狀態列
 
+```bash
 defaults write com.apple.finder ShowStatusBar -bool true
+```
 
 顯示 Finder 路徑列
 
+```bash
 defaults write com.apple.finder ShowPathbar -bool true
+```
 
 允許框選 Finde Quick Look 的文字
 
+```bash
 defaults write com.apple.finder QLEnableTextSelection -bool true
+```
 
 Finder 標題列顯示完整路徑
 
+```bash
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+```
 
 預設搜尋列的結果為當前目錄下
 
+```bash
 defaults write com.apple.finder FXDefaultSearchScope -string “SCcf”
+```
 
 關閉改變副檔名的警告提示
 
+```bash
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+```
 
 開啟資料夾的 spring loading 功能
 
+```bash
 defaults write NSGlobalDomain com.apple.springing.enabled -bool true
+```
 
 開啟 Dock 的 spring loading 功能
 
+```bash
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
+```
 
 移除 spring loading 的延遲
 
+```bash
 defaults write NSGlobalDomain com.apple.springing.delay -float 0
+```
 
 避免在 network volumes 底下建立 .DS_Store 檔案
 
+```bash
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+```
 
 使用 column view 作為 Finder 預設顯示選項
 
+```bash
 defaults write com.apple.finder FXPreferredViewStyle -string “clmv”
+```
 
 關閉清空垃圾桶的警告提示
 
+```bash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
+```
 
 使用黑色的選單列和 Dock
 
+```bash
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
+```
 
 使用縮放的效果作為視窗放大縮小效果
 
+```bash
 defaults write com.apple.dock mineffect -string “scale”
+```
 
 應用程式縮小至自己的圖示
 
+```bash
 defaults write com.apple.dock minimize-to-application -bool true
+```
 
 顯示 Dock 應用程式開啟中的小亮燈提示
 
+```bash
 defaults write com.apple.dock show-process-indicators -bool true
+```
 
 關閉 Dock 開啟應用程式的彈跳動畫
 
+```bash
 defaults write com.apple.dock launchanim -bool false
+```
 
 加快 Mission Control 的動畫速度
 
+```bash
 defaults write com.apple.dock expose-animation-duration -float 0.1
+```
 
 關閉 Mission Control 的應用程式群組化顯示
 
+```bash
 defaults write com.apple.dock expose-group-by-app -bool false
+```
 
 關閉 Dashboard
 
+```bash
 defaults write com.apple.dashboard mcx-disabled -bool true
+```
 
 將 Dashboard 從多重桌面之中移除
 
+```bash
 defaults write com.apple.dock dashboard-in-overlay -bool true
+```
 
 自動隱藏 Dock
 
+```bash
 defaults write com.apple.dock autohide -bool true
+```
 
 移除隱藏 Dock 的延遲
 
+```bash
 defaults write com.apple.dock autohide-delay -float 0
+```
 
 移除 Dock 的顯示/隱藏動畫
 
+```bash
 defaults write com.apple.dock autohide-time-modifier -float 0
+```
 
 將隱藏的應用程式 Dock 圖示半透明顯示
 
+```bash
 defaults write com.apple.dock showhidden -bool true
+```
 
 以上，若修改過 `homebrew/install.sh` 或 `osx/set-defaults.sh` 之後，直接執行指令：
 
