@@ -6,6 +6,7 @@ import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import placeholder from '../../assets/blog-placeholder-1.jpg';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -105,11 +106,9 @@ const posts = (await getCollection('blog')).sort(
 						posts.map((post) => (
 							<li>
 								<a href={`/posts/${post.id}/`}>
-									{post.data.heroImage && (
-										<div class="cover">
-											<Image width={720} height={360} src={post.data.heroImage} alt="" />
-										</div>
-									)}
+									<div class="cover">
+										<Image width={720} height={360} src={post.data.heroImage ?? placeholder} alt="" />
+									</div>
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
