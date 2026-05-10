@@ -134,7 +134,7 @@ welcome view：
 
 開啟（application\views\welcome_message.php），修改內容如下：
 
-```php-template
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
