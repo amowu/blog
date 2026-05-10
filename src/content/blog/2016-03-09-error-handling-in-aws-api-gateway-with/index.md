@@ -79,6 +79,7 @@ HTTP/1.1 200 OK
 
 ```python-repl
 HTTP/1.1 400 Bad Request
+...
 ```
 
 ```
