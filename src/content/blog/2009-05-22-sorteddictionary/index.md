@@ -40,6 +40,51 @@ namespace SortedDictionarySample
 
 ```csharp
 using System;
+using System.Collections.Generic;
+
+namespace SortedDictionarySample
+{
+  /// 
+  /// 遞減整數用的比較器，實作IComparer介面
+  /// 
+  public class IntegerDecreaseComparer : IComparer<int>
+  {
+    /// 
+    /// Compares two integer and returns a value indicating whether one is less than, equal to, or greater than the other.
+    /// 
+    /// The first integer to compare.
+    /// The second integer to compare. 
+    /// 
+    /// return Less than zero if x is less than y, 
+    /// return Zero if x equals y, 
+    /// return Greater than zero if x is greater than y.
+    /// 
+    public int Compare(int x, int y)
+    {
+      if (x < y)
+        return 1;
+      else
+        return -1;
+    }
+  }
+ 
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      SortedDictionary<int, string> sortedDictionary = new SortedDictionary<int, string>(new IntegerDecreaseComparer());
+ 
+      sortedDictionary.Add(5, "五");
+      sortedDictionary.Add(4, "四");
+      sortedDictionary.Add(6, "六");
+      sortedDictionary.Add(2, "二");
+      sortedDictionary.Add(8, "八");
+ 
+      foreach (KeyValuePair<int, string> kvp in sortedDictionary)
+      Console.WriteLine(kvp.Value);
+    }
+  }
+}
 ```
 
 範例程式：
