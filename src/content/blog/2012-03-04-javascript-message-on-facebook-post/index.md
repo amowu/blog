@@ -11,6 +11,9 @@ pubDate: 'Mar 04 2012'
 
 ```xml
 <script type="text/javascript">
+window.location.href="fbconnect:\/\/success?
+post_id=XXXXXX;
+</script>
 ```
 
 這個問題我碰到兩次：
