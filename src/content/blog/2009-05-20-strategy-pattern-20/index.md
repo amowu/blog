@@ -72,6 +72,75 @@ Strategy pattern 是指物件本身有某些行爲（method），但是在不同
 
 ```csharp
 using System;
+
+namespace StrategySample
+{
+  /// <summary>
+  /// 鴨子抽象類別
+  /// </summary>
+  public abstract class Duck
+  {
+    /// <summary>
+    /// 每隻鴨子都會參考到一個實踐FlyBehavior介面的飛行物件
+    /// </summary>
+    protected FlyBehavior flyBehavior;
+    /// <summary>
+    /// 每隻鴨子都會參考到一個實踐QuackBehavior介面的叫聲物件
+    /// </summary>
+    protected QuackBehavior quackBehavior;
+ 
+    /// <summary>
+    /// 鴨子的外觀
+    /// </summary>
+    /// <remarks>因為每隻鴨子的外觀不同，所以display()方法是抽象的</remarks>
+    public abstract void display();
+ 
+    /// <summary>
+    /// 鴨子的游泳行為
+    /// </summary>
+    /// <remarks>所有的鴨子都用相同的方式游泳，所以由超類別負責處理這部份的程式</remarks>
+    public void swim()
+    {
+      Console.WriteLine("All duck s float, even decoys");
+    }
+ 
+    /// <summary>
+    /// 鴨子的飛行行為
+    /// </summary>
+    /// <remarks>鴨子不親自處理飛行行為，而是委由flyBehavior物件幫Duck進行飛行</remarks>
+    public void performFly()
+    {
+      this.flyBehavior.fly();
+    }
+ 
+    /// <summary>
+    /// 鴨子的叫聲行為
+    /// </summary>
+    /// <remarks>鴨子不親自處理叫聲行為，而是委由quackBehavior物件幫Duck進行呱呱叫</remarks>
+    public void performQuack()
+    {
+      this.quackBehavior.quack();
+    }
+ 
+    /// <summary>
+    /// 呼叫setFlyBehavior()方法可以改變鴨子的飛行方式
+    /// </summary>
+    /// <param name="newFlyBehavior">想要改變的飛行方式</param>
+    public void setFlyBehavior(FlyBehavior newFlyBehavior)
+    {
+      this.flyBehavior = newFlyBehavior;
+    }
+ 
+    /// <summary>
+    /// 呼叫setQuackBehavior()方法可以改變鴨子的叫聲方式
+    /// </summary>
+    /// <param name="newQuackBehavior">想要改變的叫聲方式</param>
+    public void setQuackBehavior(QuackBehavior newQuackBehavior)
+    {
+      this.quackBehavior = newQuackBehavior;
+    }        
+  }
+}
 ```
 
 上面我們把 FlyBehavior 跟 QuackBehavior 以介面的型態加入到 Duck 的成員變數，這樣就能在 Runtime 期間動態改變鴨子的行為。
