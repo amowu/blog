@@ -58,6 +58,29 @@ heroImage: './cover.png'
 
 ```xml
 <!doctype html>
+<html ng-app="phonecatApp">
+...
+    <div ng-view></div>
+...
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="tabletop.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+...
+app.js，controller.js 和 services.js 後面會說明，接下來先加入 phone-list.html。
+partials/phone-list.html:
+<div>
+  <ul>
+    <li ng-repeat="phone in phones">
+      <img ng-src="{{phone.imageurl}}">
+      <p>{{phone.name}}</p>
+      <p>{{phone.snippet}}</p>
+    </li>
+  </ul>
+</div>
 ```
 
 `phone-list.html` 綁定了 `name`， `snippet` 和 `imageurl` 三個變數，對應試算表的欄位名稱。
