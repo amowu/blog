@@ -202,6 +202,7 @@ exports.handler = function(event, context) {
 
 ```bash
 ./index.js
+./node_module/request-promise
 ```
 
 1. 回到 AWS Lambda
@@ -212,12 +213,24 @@ exports.handler = function(event, context) {
 
 ```json
 {
+  "text": "權力的遊戲"
+}
 ```
 
 點選 Test 測試豆瓣回應的結果：
 
 ```swift
 {
+  // ...
+  "subjects": [
+    {
+      // ...
+      "title": "权力的游戏 第五季",
+      // ...
+    }, ...
+  ],
+  "title": "搜索 \"權力的遊戲\" 的结果"
+}
 ```
 
 ### 測試 AWS API Gateway
