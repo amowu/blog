@@ -11,6 +11,8 @@ heroImage: './cover.jpg'
 
 日本大型線上時裝購物網 Zozotown 創辦人前澤友作，因新年打破最快達 100 億日圓營業額紀錄，所以決定當個大撒幣（誤）在 Twitter 上抽選 100 名網友，每人 100 萬日圓的紅包。沒想到，這則推文吸引超過 500 萬名網友的轉推，打破「[溫蒂漢堡](https://twitter.com/carterjwm/status/849813577770778624)」保持的 350 萬轉推數，成為 Twitter 有史以來最多人轉推的推文。
 
+https://x.com/yousuck2020/status/1081544630754103296?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1081544630754103296%7Ctwgr%5Ed723c4d7590a665cfb47bed0f188431e1399c0ea%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Ftype%3Dtext2Fhtmlkey%3Da19fcc184b9711e1b4764040d3dc5c07schema%3Dtwitterurl%3Dhttps3A%2F%2Ftwitter.com%2Fyousuck2020%2Fstatus%2F1081544630754103296image%3D
+
 前澤友作，[2018 福布斯日本排名最富有人物](https://forbesjapan.com/feat/japanrich/)第 18 位。SpaceX 宣布其為全球首位私人月球旅行的乘客，並且提出「[親愛的月球](https://zh.wikipedia.org/wiki/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%9C%88%E7%90%83)」計劃，邀請六至八位藝術家參加 2023 年進行的環遊月球之旅。
 
 #### 2、財神對貝佐斯
