@@ -30,6 +30,7 @@ exports.handler = function(event, context) {
 
 ```python-repl
 HTTP/1.1 200 OK
+...
 ```
 
 ```
