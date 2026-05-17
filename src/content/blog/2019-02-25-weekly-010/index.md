@@ -68,3 +68,5 @@ heroImage: './cover.jpeg'
 是否覺得與近年來「擔憂[人工智慧](https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD)威脅人類」的話題很相似？或許我們可以從尼比魯的故事之中，總結出一些預防的方法，例如：限制在沙盒中發展（火星？）、注入有限的生命（遠比人類平均壽命還短的生命週期），萬不得已之時還留有最後一手 — — THE 大洪水（`sudo rm -rf /usr/*`）。
 
 整個宇宙也許就像《[百年孤寂](https://zh.wikipedia.org/wiki/%E7%99%BE%E5%B9%B4%E5%AD%A4%E7%8B%AC)》那樣不斷地輪迴，神創造了人、人再創造了神，生命之間彼此尋找自己起源的故事。
+
+https://youtu.be/iEeBnhMadkk?si=tiP9AIN659pViKfn
