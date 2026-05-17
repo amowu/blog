@@ -95,6 +95,8 @@ heroImage: './cover.jpg'
 
 ![](./cover.jpg)
 
+https://youtu.be/IBEjTawbeYw?si=CJDA6pcmq8l0_Dj1
+
 ### 本周金句
 
 1、
