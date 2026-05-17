@@ -19,6 +19,8 @@ heroImage: './cover.png'
 
 第一種「增加人力」在《[人月神話](https://zh.wikipedia.org/zh-tw/%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D)》 一書中，已經告訴我們為什麼沒有用了。
 
+https://x.com/JustSomeDev/status/1546827210618814464?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1546827210618814464%7Ctwgr%5Ea732597fff51ab464a98bc7701e5f38315c02e08%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Ftype%3Dtext2Fhtmlkey%3Da19fcc184b9711e1b4764040d3dc5c07schema%3Dtwitterurl%3Dhttps3A%2F%2Ftwitter.com%2FJustSomeDev%2Fstatus%2F15468272106188144643Fref_src3Dtwsrc255Etfw257Ctwcamp255Etweetembed257Ctwterm255E1546827210618814464257Ctwgr255E564e91ab5b1b194c891619dddd9112d15ed0fab5257Ctwcon255Es1_c1026ref_url3Dhttps253A252F252Fblog.amowu.com252Fprocrastiatio-and-parkinsons-law252Fimage%3D
+
 第二種「增加時間」，我們曾經嘗試過把 Scrum 的 Sprint 週期從兩個禮拜增加到三個禮拜，但是結果看起來並不理想。
 
 這篇文章我想要探討，為什麼我覺得第二種「增加時間」的方法也是沒有用的。
@@ -82,3 +84,5 @@ heroImage: './cover.png'
 比如我接下來預計要寫的幾篇文章：《Trunk Based Development 》、《Single Text of Truth 》以及《Design to Code》。這些都是跟交付功能無關的工作，卻是可以改善團隊交付速度的解決方案。
 
 否則如果只是把「[瀑布](https://zh.wikipedia.org/zh-tw/%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B)」換成「[敏捷](https://zh.wikipedia.org/zh-tw/%E6%95%8F%E6%8D%B7%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91)」的話，本質上還是在第二種資源「時間」上打轉而已，最終可能還是得應付處理不完的「[隕石](https://ithelp.ithome.com.tw/articles/10198394)」。
+
+https://x.com/AlmorTech/status/1541753810984615937?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1541753810984615937%7Ctwgr%5E50afa6fb15242354407e155310e15b5950d1480a%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Ftype%3Dtext2Fhtmlkey%3Da19fcc184b9711e1b4764040d3dc5c07schema%3Dtwitterurl%3Dhttps3A%2F%2Ftwitter.com%2Falmormd%2Fstatus%2F15417538109846159373Fref_src3Dtwsrc255Etfw257Ctwcamp255Etweetembed257Ctwterm255E1541753810984615937257Ctwgr255E564e91ab5b1b194c891619dddd9112d15ed0fab5257Ctwcon255Es1_c1026ref_url3Dhttps253A252F252Fblog.amowu.com252Fprocrastiatio-and-parkinsons-law252Fimage%3D
