@@ -39,6 +39,10 @@ heroImage: './cover.png'
 
 ```javascript
 let counter = 0;
+
+function onRequest(req: Request) ‹
+  return new Response(counter++);
+}
 ```
 
 （每次請求回應的 `counter` 都會是 0）
