@@ -45,6 +45,8 @@ heroImage: './cover.jpg'
 
 ---
 
+https://youtu.be/hFyl9SvALk0?si=SX-lVKmcjokNN4Vx
+
 傳統的射擊遊戲裡，因為爆頭即死，所以玩家傾向提高「槍法」高效殺敵。
 
 但在真實世界，作戰部隊追求的是無傷殺敵，因為受傷的代價太大了。為了不受傷，哪怕降低效率和浪費資源也在所不惜。
