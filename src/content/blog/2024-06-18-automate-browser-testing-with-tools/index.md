@@ -59,12 +59,35 @@ heroImage: './cover.png'
 
 新推出的 Chrome for Testing 是專為自動化測試設計的特製版本，它不會自動更新，但包括所有 Chrome Stable 版本的功能，可以用於複製特定版本的測試環境。這對於需要在特定版本的 Chrome 上進行測試的情況特別有用。
 
+| Channel | ![](./chrome-for-testing.png) Chrome for Testing | ![](./chrome-stable.png) Chrome Stable | ![](./chrome-beta.png) Chrome Beta | ![](./chrome-dev.png) Chrome Dev | ![](./chrome-canary.png) Chrome Canary |
+| --- | --- | --- | --- | --- | --- |
+| 特點 | 特製版本，不自動更新，包含所有 Chrome Stable 功能 | 針對大眾使用者，功能穩定可靠 | 即將成為 Stable 版本的測試版，功能相對穩定 ｜ 最新功能和修復，每週更新一次 | 最實驗性的版本，每天更新，包含所有最新功能和修復 | |
+| 更新頻率 | 不定期 | 每月 | 每四至六週 | 每週 | 每天 |
+| 適用對象 | 測試工程師、開發人員 | 所有人 | UX/UI 團隊、開發團隊 | 工程團隊、開發人員 | 開發者、測試人員 |
+| 主要用途 | 自動化瀏覽器測試 | 日常瀏覽使用、確保穩定性 | 提前預見即將發佈的功能和變化 | 測試最新功能和 API，提前適應變化 | 是用最新的 Chrome 功能和 API，進行實驗性測試 |
+
 #### 新 Headless 模式
 
 過去 Chrome 的舊 headless 模式（無頭模式）是單獨維護的瀏覽器版本，容易發生結果不一致的問題。新 headless 模式不再是單獨維護的瀏覽器，而是與 Chrome Stable 使用相同的程式碼，支援所有 Chrome Stable 功能。這使得測試 Extensions 和使用 WebGPU（AI 相關應用）的網站變得更加容易。
 
 ```javascript
 // for Chrome Extensions
+
+import puppeteer from 'puppeteer':
+
+const EXTENSION_PATH = '~/dino/workspace/my-super-cool-extension-src';
+const EXTENSION_ID = 'jkomgjfbbjocikdmilgaehbfpllalmia' ;
+
+const browser = await puppeteer.launch({
+  headless: true, // Defaults to new headless mode from Puppeteer 22+
+  args: [
+    '--disable-extensions-except=${EXTENSION_PATH}',
+    '--load-extension=${EXTENSION_PATH}',
+  ]
+});
+
+const page = await browser.newPage();
+await page goto('chrome-extension://${EXTENSION_ID}/page.htm');
 ```
 
 ```javascript
