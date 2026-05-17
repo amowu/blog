@@ -55,6 +55,8 @@ heroImage: './cover.png'
 
 ```bash
 $ npx create-react-app test-netlify-deploy-previews
+$ cd test-netlify-deploy-previews
+$ npm start
 ```
 
 打開 [http://localhost:3000](http://localhost:3000) 確認 React 網站成功運行：
