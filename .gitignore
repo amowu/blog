@@ -1,5 +1,9 @@
 # build output
 dist/
+.output/
+.vercel/
+.netlify/
+
 # generated types
 .astro/
 
@@ -12,15 +16,29 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-
 # environment variables
 .env
+.env.local
 .env.production
+.env.development
 
-# macOS-specific files
-.DS_Store
-
-# jetbrains setting folder
+# editor
 .idea/
 
-medium-export-267691624371025aa03d686595aa31a7565514e7142ce6cecdc42e703924e08a
+# os
+.DS_Store
+Thumbs.db
+
+# bun
+bun.lock
+bun.lockb
+.bun-cache/
+
+# pagefind cache
+pagefind/
+
+# misc
+*.log
+
+# medium export (local working copy, do not commit)
+medium-export-267691624371025aa03d686595aa31a7565514e7142ce6cecdc42e703924e08a/

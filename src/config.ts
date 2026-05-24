@@ -14,7 +14,7 @@ export const SITE_IMAGES = {
   ogDefault: ogDefaultImg,
 } as const;
 
-export const locales = ['en', 'fr'] as const;
+export const locales = ['zh-tw', 'en'] as const;
 export type Locale = (typeof locales)[number];
 
 /**
@@ -49,16 +49,15 @@ export const SITE: SiteConfig = {
   // ==========================================
 
   /** Default site title used as homepage <title> and meta. */
-  title: 'Chirping Astro',
+  title: 'Amo Wu',
   /** Site tagline / description. */
-  description:
-    'A modern, multilingual Astro v6 theme inspired by Chirpy — built with Tailwind v4, daisyUI, MDX, Pagefind, and Giscus.',
+  description: 'Amo Wu 的部落格',
   /** Author/handle shown in footer + meta. */
   author: {
-    name: 'Chirping Astro',
+    name: 'Amo Wu',
     url: GITHUB_HANDLE ? `https://github.com/${GITHUB_HANDLE}` : undefined,
     avatar: avatarImg,
-    bio: 'A text-focused Astro V6 theme.',
+    bio: '',
   },
   /** Default OG image. */
   defaultOgImage: ogDefaultImg.src,
@@ -105,13 +104,13 @@ export const SITE: SiteConfig = {
   /** Public URL of the deployed site, no trailing slash. Breaks SEO/RSS if incorrect. */
   // `||` (not `??`) so an explicitly empty `SITE_URL=` in `.env` also
   // falls back to the default. Astro requires `site` to be a valid URL.
-  url: import.meta.env.SITE_URL || 'https://chirping-astro.example.com',
+  url: import.meta.env.SITE_URL || 'https://blog.amowu.com',
   /** Supported locales. Changing this requires adding/removing locale folders, content, and i18n entries. */
   locales: locales,
   /** Default locale. Changing this is a breaking, atomic, multi-file operation. */
-  defaultLocale: 'en',
+  defaultLocale: 'zh-tw',
   /** Show the language switcher and link to translated pages. */
-  multilingual: true,
+  multilingual: false,
 };
 
 export const NAV: readonly NavItem[] = [
