@@ -131,7 +131,12 @@ export async function getTranslations(entry: Post): Promise<Record<Locale, Post 
       continue;
     }
     const all = await getPosts(locale);
-    out[locale] = all.find((p) => p.data.translationKey === entry.data.translationKey);
+    // Cast: when SITE.locales has a single value, TS narrows `locale` to
+    // `never` after the early-return branch above. The runtime value is
+    // always a valid Locale.
+    (out as Record<Locale, Post | undefined>)[locale] = all.find(
+      (p) => p.data.translationKey === entry.data.translationKey,
+    );
   }
   return out as Record<Locale, Post | undefined>;
 }

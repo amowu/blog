@@ -258,6 +258,11 @@ export default defineConfig({
             xslURL: SITEMAP_XSL_HREF,
             filter: (page) => {
               if (page.includes('/draft/') || page.endsWith('/404/')) return false;
+              // 'en' is declared as a secondary locale to keep Chirping's
+              // i18n internals type-safe, but no English content is
+              // published — exclude /en/* from the sitemap so search engines
+              // don't index empty 404-shaped pages.
+              if (page.includes('/en/') || page.endsWith('/en')) return false;
               // Exclude unlisted posts from the sitemap.
               for (const seg of unlistedPathSegments) {
                 if (page.includes(String(seg))) return false;

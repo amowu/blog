@@ -89,14 +89,8 @@ const meta: SeoMeta =
     <link
       rel="alternate"
       type="application/rss+xml"
-      title={`${SITE.title} (EN)`}
+      title={SITE.title}
       href={withBase('/rss.xml')}
-    />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title={`${SITE.title} (FR)`}
-      href={withBase('/fr/rss.xml')}
     />
     <SEO meta={meta} />
     {/* Custom fonts configured via Astro Fonts API */}

@@ -14,6 +14,9 @@ export const SITE_IMAGES = {
   ogDefault: ogDefaultImg,
 } as const;
 
+// 'en' kept only to satisfy Chirping internals (i18n dict, helpers) — no
+// English content is published. `/en/...` routes that Astro emits are filtered
+// out of the sitemap in `astro.config.mjs`.
 export const locales = ['zh-tw', 'en'] as const;
 export type Locale = (typeof locales)[number];
 
