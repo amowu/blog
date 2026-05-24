@@ -3,6 +3,7 @@ title: '殺雞用牛刀'
 description: '為何會有公司願意花大錢在電視、地鐵、體育比賽投放廣告？'
 pubDate: 'Jan 21 2019'
 heroImage: './cover.jpg'
+categories: [Weekly]
 ---
 
 ### 為何會有公司願意花大錢在電視、地鐵、體育比賽投放廣告？

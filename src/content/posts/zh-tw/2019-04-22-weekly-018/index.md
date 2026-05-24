@@ -3,6 +3,7 @@ title: '向死而生'
 description: 'HBO 當家美劇《權力遊戲》終於迎來了最終季，在上周開始全球播映。'
 pubDate: 'Apr 22 2019'
 heroImage: './cover.jpg'
+categories: [Weekly]
 ---
 
 HBO 當家美劇《權力遊戲》終於迎來了最終季，在上周開始全球播映。

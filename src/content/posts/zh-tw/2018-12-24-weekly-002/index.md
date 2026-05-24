@@ -3,6 +3,7 @@ title: '陽光、大地與詩歌'
 description: '新聞'
 pubDate: 'Dec 24 2018'
 heroImage: './cover.jpg'
+categories: [Weekly]
 ---
 
 ### 新聞

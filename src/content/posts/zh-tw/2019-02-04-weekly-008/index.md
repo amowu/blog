@@ -3,6 +3,7 @@ title: '天下之至柔，馳騁天下之至堅'
 description: '古人有「立德」、「立功」、「立言」三不朽之説，認為最完美的人生境界就是在道德、文章及功業方面均有建樹，此為真「三不朽」。'
 pubDate: 'Feb 04 2019'
 heroImage: './cover.jpg'
+categories: [Weekly]
 ---
 
 古人有「立德」、「立功」、「立言」三不朽之説，認為最完美的人生境界就是在道德、文章及功業方面均有建樹，此為真「[三不朽](https://zh.wikipedia.org/wiki/%E4%B8%89%E4%B8%8D%E6%9C%BD)」。

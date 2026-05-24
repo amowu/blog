@@ -3,6 +3,7 @@ title: '生き甲斐'
 description: '文摘'
 pubDate: 'Mar 11 2019'
 heroImage: './cover.jpg'
+categories: [Weekly]
 ---
 
 ### 文摘

@@ -3,6 +3,7 @@ title: '暗淡藍點'
 description: '新聞'
 pubDate: 'Jan 28 2019'
 heroImage: './cover.jpg'
+categories: [Weekly]
 ---
 
 ### 新聞

@@ -3,6 +3,7 @@ title: '最後下班的人，先離職'
 description: '前陣子在書店架上看見一本書，書名是《最後下班的人，先離職》。'
 pubDate: 'May 20 2019'
 heroImage: './cover.jpeg'
+categories: [Weekly]
 ---
 
 前陣子在書店架上看見一本書，書名是《最後下班的人，先離職》。

@@ -2,6 +2,7 @@
 title: 'Story of Your Life'
 description: '語言本能'
 pubDate: 'Mar 25 2019'
+categories: [Weekly]
 ---
 
 ### 語言本能

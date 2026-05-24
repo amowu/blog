@@ -3,6 +3,7 @@ title: '億萬年孤寂'
 description: '三皇五帝'
 pubDate: 'Feb 25 2019'
 heroImage: './cover.jpeg'
+categories: [Weekly]
 ---
 
 ### 三皇五帝

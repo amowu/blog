@@ -3,6 +3,7 @@ title: '為什麼靜香要嫁給大雄？'
 description: '2019 年可以說是 3DCG 動畫電影的一年，尤其是改編經典故事的作品。除了年初的《艾莉塔：戰鬥天使》之外，還有近期上映的《小飛象》，以及未來即將播出的《名偵探皮卡丘》和《獅子王》。'
 pubDate: 'Apr 15 2019'
 heroImage: './cover.jpg'
+categories: [Weekly]
 ---
 
 ![](./image1.png)

@@ -3,6 +3,7 @@ title: '上帝擲骰子嗎？'
 description: '下圖是 Reddit 論壇上的一位大神，把近一世紀前的「第五次索爾維會議」黑白照片給上色後的結果。'
 pubDate: 'Apr 01 2019'
 heroImage: './cover.jpeg'
+categories: [Weekly]
 ---
 
 下圖是 [Reddit](https://zh.wikipedia.org/wiki/Reddit) 論壇上的一位[大神](https://www.reddit.com/r/pics/comments/z7a7c/einstein_bohr_curie_more_at_solvay_conference/)，把近一世紀前的「[第五次索爾維會議](https://zh.wikipedia.org/wiki/%E7%B4%A2%E5%B0%94%E7%BB%B4%E4%BC%9A%E8%AE%AE)」黑白照片給上色後的結果。

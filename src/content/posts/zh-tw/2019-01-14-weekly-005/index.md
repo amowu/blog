@@ -3,6 +3,7 @@ title: '財神的精確度'
 description: '新聞'
 pubDate: 'Jan 14 2019'
 heroImage: './cover.jpg'
+categories: [Weekly]
 ---
 
 ### 新聞

@@ -3,6 +3,7 @@ title: '我們從哪裡來？我們要往哪裡去？'
 description: '新聞'
 pubDate: 'Jan 01 2019'
 heroImage: './cover.jpg'
+categories: [Weekly]
 ---
 
 ### 新聞

@@ -3,6 +3,7 @@ title: '仿生人會夢見電子羊嗎？'
 description: '新聞'
 pubDate: 'Jan 07 2019'
 heroImage: './cover.jpg'
+categories: [Weekly]
 ---
 
 ### 新聞

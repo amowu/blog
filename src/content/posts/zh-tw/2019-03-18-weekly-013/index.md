@@ -3,6 +3,7 @@ title: '天下熙熙，皆為利來；天下攘攘，皆為利往'
 description: '文摘'
 pubDate: 'Mar 18 2019'
 heroImage: './cover.jpeg'
+categories: [Weekly]
 ---
 
 ### 文摘

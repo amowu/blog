@@ -3,6 +3,7 @@ title: '除惡「勿」盡'
 description: '新聞'
 pubDate: 'Feb 18 2019'
 heroImage: './cover.jpg'
+categories: [Weekly]
 ---
 
 ### 新聞

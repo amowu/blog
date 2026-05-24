@@ -3,6 +3,7 @@ title: 'Is reality really real?'
 description: '物理學家主張他們的研究領域是最基礎的科學。畢竟生物學、工程學、化學等等都必須依賴物理學中的物質、能量和交互作用。'
 pubDate: 'Mar 04 2019'
 heroImage: './cover.png'
+categories: [Weekly]
 ---
 
 物理學家主張他們的研究領域是最基礎的科學。畢竟生物學、工程學、化學等等都必須依賴物理學中的物質、能量和交互作用。

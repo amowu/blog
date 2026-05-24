@@ -3,6 +3,7 @@ title: '透過寫作永生於人間'
 description: '前言'
 pubDate: 'Dec 17 2018'
 heroImage: './cover.jpg'
+categories: [Weekly]
 ---
 
 ### 前言
