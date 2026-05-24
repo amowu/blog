@@ -134,9 +134,12 @@
   /* Reading column max width on post pages */
   --width-prose: 50rem;
 
-  /* Fonts — configured via Astro Fonts API (astro.config.mjs) */
-  --font-sans: var(--font-source-sans-3, system-ui, sans-serif);
-  --font-mono: var(--font-jetbrains-mono, ui-monospace, monospace);
+  /* Fonts — Latin web fonts via Astro Fonts API (astro.config.mjs),
+     extended with CJK system fonts for Traditional Chinese fallback. */
+  --font-sans: var(--font-source-sans-3, system-ui), -apple-system,
+    'PingFang TC', 'Microsoft JhengHei', 'Noto Sans CJK TC', sans-serif;
+  --font-mono: var(--font-jetbrains-mono, ui-monospace), Menlo, Monaco,
+    'PingFang TC', 'Microsoft JhengHei', monospace;
 }
 
 [data-theme='chirpy-dark'] {

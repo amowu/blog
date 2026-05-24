@@ -30,6 +30,13 @@ const fontsDir = join(process.cwd(), 'node_modules/@fontsource/inter/files');
 const fontRegular = readFileSync(join(fontsDir, 'inter-latin-400-normal.woff'));
 const fontBold = readFileSync(join(fontsDir, 'inter-latin-700-normal.woff'));
 
+// CJK fallback for Traditional Chinese titles. Satori needs the font data
+// explicitly — system fonts are unavailable in CI builds. Without this the
+// 中文 glyphs render as tofu (□).
+const fontCjk = readFileSync(
+  join(process.cwd(), 'src/assets/fonts/NotoSansTC-Regular.otf'),
+);
+
 /**
  * Generate a themed OG image as a PNG buffer.
  */
@@ -259,6 +266,7 @@ export async function generateOgImage(data: OgImageData): Promise<Buffer> {
     fonts: [
       { name: 'Inter', data: fontRegular, weight: 400, style: 'normal' },
       { name: 'Inter', data: fontBold, weight: 700, style: 'normal' },
+      { name: 'Noto Sans TC', data: fontCjk, weight: 400, style: 'normal' },
     ],
   });
 
