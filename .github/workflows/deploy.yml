@@ -29,9 +29,6 @@ jobs:
           node-version: 22
           cache: npm
 
-      # `npm ci` honors package-lock.json platform-specific optional deps
-      # better than bun for cross-OS development (local = darwin-arm64,
-      # CI = linux-x64-gnu). See npm/cli#4828.
       - name: Install dependencies
         run: npm ci
 

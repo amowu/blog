@@ -64,6 +64,12 @@
     "typescript": "^6.0.3",
     "zod": "^4.4.3"
   },
+  "optionalDependencies": {
+    "@rollup/rollup-darwin-arm64": "4.60.3",
+    "@rollup/rollup-linux-x64-gnu": "4.60.3",
+    "@img/sharp-darwin-arm64": "0.34.5",
+    "@img/sharp-linux-x64": "0.34.5"
+  },
   "keywords": [
     "astro",
     "astro-theme",
