@@ -52,9 +52,9 @@ export const SITE: SiteConfig = {
   // ==========================================
 
   /** Default site title used as homepage <title> and meta. */
-  title: 'Amo Wu',
+  title: "Amo's Blog",
   /** Site tagline / description. */
-  description: 'Amo Wu 的部落格',
+  description: 'Amo 的部落格',
   /** Author/handle shown in footer + meta. */
   author: {
     name: 'Amo Wu',
