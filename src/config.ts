@@ -77,7 +77,7 @@ export const SITE: SiteConfig = {
   /** Automatically generate Open Graph images for posts that don't have a `heroImage`. */
   autoOgImage: true,
   /** Show a link to the Privacy Policy page in the footer. */
-  showPrivacyPolicy: true,
+  showPrivacyPolicy: false,
   /** Footer text/link controls. */
   footer: {
     /**
@@ -91,7 +91,7 @@ export const SITE: SiteConfig = {
      */
     rightText: undefined,
     /** Whether to show the Privacy Policy link in the footer. */
-    showPrivacyPolicy: true,
+    showPrivacyPolicy: false,
     /** Whether to show theme credits in the footer right side. Theme <themeName> */
     showThemeCredits: true,
     /** Label for the theme repository link in the right footer line. */
