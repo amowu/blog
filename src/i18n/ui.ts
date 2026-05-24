@@ -143,8 +143,7 @@ export const messages = {
       '複製產生的 `data-repo-id`、`data-category` 和 `data-category-id` 值。',
     'post.commentsSetupStep3':
       '在 `.env` 設定 `PUBLIC_GISCUS_ENABLED`、`PUBLIC_GISCUS_REPO`、`PUBLIC_GISCUS_REPO_ID`、`PUBLIC_GISCUS_CATEGORY` 與 `PUBLIC_GISCUS_CATEGORY_ID` 等環境變數。',
-    'post.commentsSetupStep4':
-      '重新 build 網站 — 這段提示會被替換成留言串。',
+    'post.commentsSetupStep4': '重新 build 網站 — 這段提示會被替換成留言串。',
     'post.commentsSetupDocs': '打開 giscus.app',
     'post.share': '分享',
     'post.copyLink': '複製連結',
@@ -195,10 +194,10 @@ export const messages = {
     '404.description': '你要找的頁面飛走了。',
     '404.cta': '回到首頁',
 
-    'footer.poweredBy': '由',
-    'footer.theme': '主題',
+    'footer.poweredBy': 'Powered by',
+    'footer.theme': 'Theme',
     'footer.privacy': '隱私政策',
-    'footer.copyright': '保留所有權利。',
+    'footer.copyright': 'All rights reserved.',
   },
 } as const satisfies Record<Locale, Record<string, string>>;
 
