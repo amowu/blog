@@ -45,6 +45,7 @@ npm run format:check # Prettier check
 | `PUBLIC_GISCUS_REPO_ID` | 開啟留言時 | giscus.app 產生 |
 | `PUBLIC_GISCUS_CATEGORY` | 開啟留言時 | giscus.app 產生 |
 | `PUBLIC_GISCUS_CATEGORY_ID` | 開啟留言時 | giscus.app 產生 |
+| `PUBLIC_CF_ANALYTICS_TOKEN` | no | Cloudflare Web Analytics token；留白關閉，僅 production build 注入 beacon |
 
 CI / GitHub Actions：以上環境變數設在 repo 的 `Settings → Environments → github-pages → Environment variables`。
 
