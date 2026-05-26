@@ -14,6 +14,12 @@ export const GET: APIRoute = async (context) => {
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   const siteOrigin = (context.site ?? new URL(SITE.url)).origin;
   const siteWithBase = `${siteOrigin}${base}`;
+  const feedPath = locale === SITE.defaultLocale ? '/rss.xml' : `/${locale}/rss.xml`;
+  const feedUrl = `${siteWithBase}${feedPath}`;
+  const xmlns = { atom: 'http://www.w3.org/2005/Atom' };
+  const customData =
+    `<language>${langTag}</language>` +
+    `<atom:link href="${feedUrl}" rel="self" type="application/rss+xml"/>`;
 
   if (import.meta.env.CI_SKIP_RSS_SITEMAP === 'true') {
     return rss({
@@ -21,7 +27,8 @@ export const GET: APIRoute = async (context) => {
       description: SITE.description,
       site: siteWithBase,
       items: [],
-      customData: `<language>${langTag}</language>`,
+      xmlns,
+      customData,
     });
   }
 
@@ -48,7 +55,7 @@ export const GET: APIRoute = async (context) => {
         ]),
         allowedAttributes: {
           ...sanitizeHtml.defaults.allowedAttributes,
-          '*': ['id', 'class', 'style'],
+          '*': ['id', 'class'],
           img: ['src', 'alt', 'title', 'width', 'height', 'loading', 'decoding', 'srcset'],
           source: ['src', 'srcset', 'type', 'media'],
           iframe: ['src', 'width', 'height', 'allow', 'allowfullscreen', 'frameborder', 'title'],
@@ -71,7 +78,8 @@ export const GET: APIRoute = async (context) => {
     description: SITE.description,
     site: siteWithBase,
     items,
-    customData: `<language>${langTag}</language>`,
+    xmlns,
+    customData,
   });
 };
 
