@@ -56,7 +56,7 @@ export const GET: APIRoute = async (context) => {
         allowedAttributes: {
           ...sanitizeHtml.defaults.allowedAttributes,
           '*': ['id', 'class'],
-          img: ['src', 'alt', 'title', 'width', 'height', 'loading', 'decoding', 'srcset'],
+          img: ['src', 'alt', 'title', 'width', 'height', 'srcset'],
           source: ['src', 'srcset', 'type', 'media'],
           iframe: ['src', 'width', 'height', 'allow', 'allowfullscreen', 'frameborder', 'title'],
           a: ['href', 'name', 'target', 'rel'],
