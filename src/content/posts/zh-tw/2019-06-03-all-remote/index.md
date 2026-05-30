@@ -13,7 +13,7 @@ heroImage: './cover.jpeg'
 
 GitLab 是一間全遠端（All Remote）的公司，[團隊成員](https://about.gitlab.com/company/team/)遍布全球 50 多個國家。這裡介紹了一些 GitLab 的[工作原理](https://about.gitlab.com/company/culture/all-remote/tips/)。
 
-### 遠端工作宣言
+## 遠端工作宣言
 
 全遠端工作提倡：
 
@@ -29,16 +29,16 @@ GitLab 是一間全遠端（All Remote）的公司，[團隊成員](https://abou
 
 ![](./image1.jpg)
 
-### 為何遠端？
+## 為何遠端？
 
 > 遠端工作並非一個需要克服的挑戰。而是一個明顯的商業優勢。
 >  — — Victor, Product Manager, GitLab
 
 從節省辦公空間的成本到提供員工日常生活的更大靈活性，完全遠端工作為組織及其員工提供了許多優勢。 但我們也體認到，並非所有人都適合成為一家完全遠端的公司。 以下是一些優點和缺點。
 
-### 優點
+## 優點
 
-#### 對於員工
+### 對於員工
 
 * 日常生活更彈性（小孩、父母、朋友、雜務、運動、快遞）
 * 不會浪費時間、精力或金錢在通勤上（捷運和公車費用、汽油、汽車維護費、收費站等）
@@ -56,7 +56,7 @@ GitLab 是一間全遠端（All Remote）的公司，[團隊成員](https://abou
 
 > 這些靈活性使家庭的生指品質呈指數級增長，從而減輕壓力，提高您的工作效率和積極性。 這些價值是金錢無法衡量的。 — — Haydn, Regional Sales Director, GitLab
 
-#### 對於組織
+### 對於組織
 
 * 招募優秀的人才，[無論他們所居何處](https://about.gitlab.com/jobs/faq/)
 * 員工的干擾更少，效率更高
@@ -66,17 +66,17 @@ GitLab 是一間全遠端（All Remote）的公司，[團隊成員](https://abou
 * 減少會議次數，重點關注結果和出色的工作成果
 * 在當地動亂或自然災害（例如政治或天氣相關事件）的情況下保持業務的連續性
 
-#### 對於世界
+### 對於世界
 
 全遠端工作的優勢不僅止於一個組織及其人員。 由於沒有通勤的員工，也沒有辦公大樓或園區，所以遠端公司的碳足跡都要小得多。 對於全球公司而言，為低成本地區帶來薪酬較高的工作也會產生積極的經濟影響。
 
 https://youtu.be/NoFLJLJ7abE?si=x09YybzRJTeBYWdW
 
-### 缺點
+## 缺點
 
 儘管有其優點，但全遠端工作並不適合所有人。根據他們的生活方式和工作偏好，它可能對潛在員工以及組織有不利之處。
 
-#### 對於員工
+### 對於員工
 
 * 當你處於遠端時，入職可能很困難，因為它涉及更多的自我學習，而你並沒有與新同事和新員工在一起
 * 遠端角色的[第一個月](https://www.linkedin.com/pulse/transition-remote-work-1-month-casey-allen-shobe/)可能會感到孤獨，特別是如果您從傳統的辦公環境過渡
@@ -85,12 +85,12 @@ https://youtu.be/NoFLJLJ7abE?si=x09YybzRJTeBYWdW
 * 不同時區的團隊成員可能不得不在會議時間上妥協
 * 世界各地的貨幣和稅收要求的差異可能給組織帶來挑戰
 
-#### 對於組織
+### 對於組織
 
 * 因為全遠端工作非傳統，有時會讓投資者、合作夥伴和客戶有所顧慮
 * 世界各地的貨幣和稅收要求的差異可能給組織帶來挑戰
 
-### 為何時機已成熟？
+## 為何時機已成熟？
 
 如果沒有技術的不斷發展，並且持續開發和改善這類工具，完全遠端工作是不可能的。
 
@@ -109,7 +109,7 @@ https://youtu.be/NoFLJLJ7abE?si=x09YybzRJTeBYWdW
 * 英語水平，更多人學習英語
 * 城市的交通擁堵在增長
 
-### 「全遠端」並不意味什麼？
+## 「全遠端」並不意味什麼？
 
 讓我們來解決一些關於完全遠端工作的常見誤解。
 
@@ -125,13 +125,13 @@ https://youtu.be/NoFLJLJ7abE?si=x09YybzRJTeBYWdW
 
 總而言之，遠端基本上是關於自由和個人選擇。在 GitLab，我們[重視您的結果](https://about.gitlab.com/handbook/values/)，而不是您完成工作的地方。
 
-### GitLab 如何建立他們的全遠端團隊
+## GitLab 如何建立他們的全遠端團隊
 
 GitLab 已經學習了很多關於構建和管理完全遠端團隊所需的知識，並希望分享這些知識以幫助其他人取得成功。
 
 了解 GitLab [如何使其工作](https://about.gitlab.com/company/culture/all-remote/tips/)並查看我們的[遠端工作提示](https://about.gitlab.com/company/culture/all-remote/tips)。
 
-### 資源
+## 資源
 
 瀏覽 GitLab 的[資源頁面](https://about.gitlab.com/company/culture/all-remote/resources)，了解有關 GitLab 全遠端方法的更多資訊，閱讀新聞中的遠端工作，以及了解其他公司的主導方式。
 

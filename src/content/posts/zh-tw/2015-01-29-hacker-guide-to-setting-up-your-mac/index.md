@@ -15,11 +15,11 @@ heroImage: './cover.png'
 
 更多的 dotfiles 請參考 [GitHub does dotfiles](https://dotfiles.github.io/) 。
 
-### Erase and reinstall OS X
+## Erase and reinstall OS X
 
 如果你打算從乾淨的 Mac 環境開始，請參閱 [OS X：如何清除並安裝](http://support.apple.com/zh-tw/HT5943) 。
 
-### Install Xcode
+## Install Xcode
 
 1. 更新 App Store。
 2. 安裝 [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)。
@@ -29,7 +29,7 @@ heroImage: './cover.png'
 xcode-select --install
 ```
 
-### Install dotfiles
+## Install dotfiles
 
 [下載](https://github.com/amowu/dotfiles/archive/master.zip)或使用 git clone 一份到 `$HOME` 目錄底下的 `.dotfiles` 資料夾裡面：
 
@@ -59,7 +59,7 @@ script/bootstrap
 
 完成之後，手動安裝一些 App Store 上才有的軟體(Dash, Moom, …)。
 
-### Restore backup
+## Restore backup
 
 使用 [Mackup](https://github.com/lra/mackup) 進行備份回復：
 
@@ -69,17 +69,17 @@ mackup restore
 
 什麼是 Mackup？底下會介紹。
 
-### dotfiles
+## dotfiles
 
 執行 `~/.dotfiles/script/bootstrap` 的時候，腳本會將目錄底下所有的 `*.symlink` 檔案透過 `ln` 命令建立連結至`$HOME` 目錄底下：
 
 ![](./image1.png)
 
-### Topical
+## Topical
 
 每一個環境的配置是以資料夾的形式被獨立區分。例如，如果想要新增 “Java” 的配置到 dotfiles，你可以簡單的新增一個命名為 `java` 的資料夾，然後將檔案建至目錄底下。 任何副檔名是 `.zsh` 的檔案將在 shell 執行時被自動載入至環境中。 任何副檔名是 `.symlink`的檔案將在你執行 `script/bootstrap` 安裝時被連結至 `$HOME` 目錄底下。
 
-### Components
+## Components
 
 一些目錄中比較特別的檔案：
 
@@ -95,14 +95,14 @@ mackup restore
 * 移除 **zsh/prompt.zsh**、**zsh/window.zsh.zsh** 等檔案，改用 Oh My Zsh 的 [themes]。([https://github.com/robbyrussell/oh-my-zsh/wiki/Themes](https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)) 代替。
 * dotfiles 只專注在 **topic/*.symlink**、**topic/path.zsh** 的配置。
 
-### OS X
+## OS X
 
 `bin/dot` 是一支簡單的腳本，會在 `script/bootstrap` 配置完 dotfiles 之後執行，安裝自定的 OS X 程式並設定系統參數配置。執行 `dot` 之後，它會跑以下兩支腳本檔：
 
 1. `$HOME/.dotfiles/homebrew/install.sh` - Homebrew packages
 2. `$HOME/.dotfiles/osx/set-defaults.sh` - OS X defaults setting
 
-### Homebrew packages
+## Homebrew packages
 
 執行 `homebrew/install.sh` 的時候，腳本會使用 [Homebrew](http://brew.sh/) 和 [Homebrew Cask](http://caskroom.io/) 來安裝 **binary**、**font** 還有 **app**，可以根據個人需求修改這個檔案，增加或減少自己需要的 packages：
 
@@ -137,7 +137,7 @@ apps=(
 
 ![](./image2.png)
 
-### OS X defaults setting
+## OS X defaults setting
 
 執行 `osx/set-defaults.sh` 之後，程式會將 Mac OS X 的一些系統設置改變，可以根據個人需求修改這個檔案，或是參考 [Mathias's dotfiles](https://github.com/mathiasbynens/dotfiles/blob/master/.osx) 整理好的配置。以下是目前設定的配置：
 
@@ -393,7 +393,7 @@ dot
 
 就會再次更新 packages 還有 defaults setting。
 
-### Mackup
+## Mackup
 
 當初始環境都安裝好之後，剩下的就是恢復備份。除了 `.zsrc`、`.vimrc` 這類 dotfile 比較適合放在版本控制之外，其他像是 Sublime 的 plugin、iTerm2 的 setting、Oh My Zsh 的 plugin、等等很多還有一般應用程式的配置檔需要備份，甚至是 SSH 的 key，這些我認為都不適合丟進 dotfiles 放上 GitHub。所以這裡介紹 [Mackup](https://github.com/lra/mackup) 這個簡單的工具作為解決方案，使用方式很簡單， `brew install mackup` 安裝完之後只要執行：
 
@@ -433,7 +433,7 @@ ssh
 
 更多詳細的配置與支援的軟體請參閱 [mackup 的文件](https://github.com/lra/mackup/tree/master/doc) 。
 
-### 參考文章
+## 參考文章
 
 * [Hacker’s Guide to Setting up Your Mac](http://lapwinglabs.com/blog/hacker-guide-to-setting-up-your-mac)
 * [First steps with Mac OS X as a Developer](http://carlosbecker.com/posts/first-steps-with-mac-os-x-as-a-developer/)

@@ -5,13 +5,13 @@ pubDate: 'Mar 10 2014'
 heroImage: './cover.png'
 ---
 
-### 概要
+## 概要
 
 這篇文章主要是說明如何寫 AngularJS 的 service，以類似 `[$resource](http://code.angularjs.org/1.2.6/docs/api/ngResource.%24resource)` REST 的方式來取得 Google 試算表的資料。
 
 > 本文假設讀者已讀過 [AngularJS Tutorial](http://docs.angularjs.org/tutorial)，了解 AngularJS 基本概念。
 
-### 目錄
+## 目錄
 
 1. 建立試算表
 2. Template
@@ -21,7 +21,7 @@ heroImage: './cover.png'
 6. 注意事項
 7. 參考
 
-### 建立試算表
+## 建立試算表
 
 前往 [https://drive.google.com](https://drive.google.com/) 或是參考已經建立好的 [試算表](https://docs.google.com/spreadsheet/ccc?key=0AhPhtlCrkuIFdEQ0TzNsSUl0QmFMdmU3QUcxRlhJV1E&usp=drive_web) 。
 
@@ -51,7 +51,7 @@ heroImage: './cover.png'
 
 這裡會以 [AngularJS Tutorial](http://docs.angularjs.org/tutorial) 的 [phonecatApp](https://github.com/angular/angular-phonecat) 為例子，說明如何實作 Tabletop.js 的 service。
 
-### Template
+## Template
 
 建立 `index.html`，並加入 [angular.js](https://github.com/angular/angular.js/tree/v1.2.6)， [angular-route.js](https://github.com/angular/bower-angular-route/tree/v1.2.6) 和 [tabletop.js](https://github.com/jsoma/tabletop/tree/v1.3.3)。
 `index.html`:
@@ -85,7 +85,7 @@ partials/phone-list.html:
 
 `phone-list.html` 綁定了 `name`， `snippet` 和 `imageurl` 三個變數，對應試算表的欄位名稱。
 
-### App Module
+## App Module
 
 接著使用 `angular-route.js` 提供的 `ngRoute` 來幫 app 設定路由，這裡先一律導向 `/phones` 。
 
@@ -113,7 +113,7 @@ phonecatApp.config(['$routeProvider',
 
 接下來要開始寫 `phonecatServices` 和 `phonecatControllers` 。
 
-### Service
+## Service
 
 這裡將 tabletop.js 封裝成一個 `Phone` 的 [service](http://code.angularjs.org/1.2.6/docs/guide/dev_guide.services.creating_services)，並自訂一個 `query` 方法提供試算表查詢使用。
 
@@ -145,7 +145,7 @@ phonecatServices.factory('Phone', ['$rootScope',
 
 `key` 的部分記得填寫試算表提供的 key。
 
-### Controller
+## Controller
 
 最後剩下 `phonecatControllers`，使用 `Phone.query` 取得試算表的 json 格式資料。
 
@@ -166,12 +166,12 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
 
 ![](./image6.png)
 
-### 注意事項
+## 注意事項
 
 * 新版 Google 試算表不支援。
 * 試算表欄位名稱只能小寫，例如：`imgUrl`，要改成 `imgurl`。
 
-### 參考
+## 參考
 
 * [AngularJS Tutorial](http://docs.angularjs.org/tutorial)
 * [Spreadsheets Data API](https://developers.google.com/gdata/samples/spreadsheet_sample)

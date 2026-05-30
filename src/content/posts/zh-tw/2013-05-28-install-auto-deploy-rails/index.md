@@ -6,13 +6,13 @@ pubDate: 'May 28 2013'
 
 這個月把網站從 Amazon EC2 搬回自己的 server，目前整個環境是 Linux（Ubuntu）+ Apache + Ruby on Rails 在跑，筆記一下從無到有的配置方法：
 
-### Install [VirtualBox](https://www.virtualbox.org/)
+## Install [VirtualBox](https://www.virtualbox.org/)
 
 虛擬主機，另一個較有名的是 [VMWare](http://www.vmware.com/)，這裡是選用 VirtualBox 4.2.12 作 host。
 
 安裝之後設定一下配置，大部份都用預設的就可以，比較不一樣的地方有，記憶體 1024 MB，網路使用**橋接界面卡**的方式，這樣可以在虛擬 OS 內連線取得固定 IP，這對使用自有網址來架設網站是很重要的。
 
-### Install [Ubuntu](http://www.ubuntu.com/)
+## Install [Ubuntu](http://www.ubuntu.com/)
 
 下載 Ubuntu 最新版本，這裡使用 13.04，然後將映像擋掛載在 VirtualBox 後啟動，照指示一步一步安裝。
 
@@ -23,7 +23,7 @@ $ sudo apt-get update
 $ sudo apt-get upgrade
 ```
 
-### Install SSH
+## Install SSH
 
 安裝完 ubuntu 後，為了之後能遠端操作 server，所以接著安裝 SSH：
 
@@ -38,7 +38,7 @@ $ cat .ssh/id_rsa.pub >> .ssh/authorized_keys
 
 註：第 3 步的 `SERVER_HOST_NAME` 記得換成自己的網址或 IP
 
-### Install vim
+## Install vim
 
 接著是安裝 vim，為了之後能在 terminal 上直接編輯文字檔案 or code：
 
@@ -47,7 +47,7 @@ $ sudo apt-get remove vim-tiny
 $ sudo apt-get install vim
 ```
 
-### Install Git
+## Install Git
 
 版本控制，因為之後部署網站都是直接從 [GitHub](https://github.com/) 拉下來，所以需要安裝 Git：
 
@@ -57,7 +57,7 @@ $ sudo apt-get install -y git-core
 
 如果需要使用到 GitHub SSH 的話請參考這篇：[Generating SSH Keys](https://help.github.com/articles/generating-ssh-keys)
 
-### Install NVM + Node
+## Install NVM + Node
 
 雖然我的網站還沒使用到 Node.js 的技術，但接下來要安裝的東西需要跑 javascript，所以這裡需要先安裝。
 
@@ -77,7 +77,7 @@ $ nvm install v0.10.0
 $ nvm alias default 0.10.0
 ```
 
-### Install RVM + Ruby + Rails
+## Install RVM + Ruby + Rails
 
 同 NVM, RVM 是 Ruby 的版本管理套件：
 
@@ -102,7 +102,7 @@ $ gem install sqlite3 --no-ri --no-rdoc
 $ gem install rails --no-ri --no-rdoc
 ```
 
-### Install Apache + Passenger
+## Install Apache + Passenger
 
 接著安裝 server，通常有 Apache 或 Nginx 兩種，這裡是選用 Apache：
 

@@ -7,7 +7,7 @@ heroImage: './cover.png'
 
 最近的案子用到 [Redux](https://github.com/rackt/redux) + [React](https://facebook.github.io/react/)，因為它 [Pure Function](https://en.wikipedia.org/wiki/Pure_function) 的特性，所以 [單元測試](https://en.wikipedia.org/wiki/Unit_testing) 很容易寫，順便也趁機會玩一下 [程式碼覆蓋率](https://www.blogger.com/%28https://en.wikipedia.org/wiki/Code_coverage%29) （Code Coverage）。
 
-### 單元測試 Unit Test
+## 單元測試 Unit Test
 
 這裡就不講單元測試怎麼寫了，網路上有很多大神的好文可以爬，我是用 [Mocha](https://mochajs.org/) + [Chai](http://chaijs.com/) ：
 
@@ -56,7 +56,7 @@ gulp.task('mocha', () => {
 * gulp 可不用 `-g` 全域安裝
 * CI 會自動執行測試
 
-### 程式碼覆蓋率 Code Coverage
+## 程式碼覆蓋率 Code Coverage
 
 有許多提供 code coverage review 的服務，例如： [Code Climate](https://codeclimate.com/)、 [Codecov](https://codecov.io/)、 [Coveralls](https://coveralls.io/)。這裡選擇 [Codecov](https://codecov.io/) ，因為它的 GitHub public repo 方案是免費的。
 

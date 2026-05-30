@@ -6,7 +6,7 @@ heroImage: './cover.jpg'
 categories: [Weekly]
 ---
 
-### 新聞
+## 新聞
 
 美國總統川普於 18 日正式下令成立「太空司令部」，這將成為美軍在陸軍、海軍、陸戰隊和空軍之外的另一支全新軍種。
 
@@ -40,9 +40,9 @@ categories: [Weekly]
 
 [Hahow app 登陸頁](https://events.hahow.in/hahowapp-21892)
 
-### 資源
+## 資源
 
-#### Coloring China ! | 色染中国
+### Coloring China ! | 色染中国
 
 [https://se.joway.io/](https://se.joway.io/)
 
@@ -60,9 +60,9 @@ categories: [Weekly]
 
 [https://github.com/amowu/taiwan-colors](https://github.com/amowu/taiwan-colors)
 
-### 工具
+## 工具
 
-#### remove.bg
+### remove.bg
 
 [https://www.remove.bg](https://www.remove.bg/)
 
@@ -82,7 +82,7 @@ categories: [Weekly]
 
 嗯⋯⋯是沒什麼問題啦，不過能順便把那傢伙給一起去掉嗎？
 
-### 本周圖片
+## 本周圖片
 
 Behance 大神 [Milo](https://www.behance.net/milothemes) 整理了一篇《[2019 年設計趨勢指南](https://www.behance.net/gallery/71481981/2019-Design-Trends-Guide)》，針對顏色、插畫、動畫特效、字型和排版等方面，給出了自己的預測分析和建議。
 
@@ -100,7 +100,7 @@ Behance 大神 [Milo](https://www.behance.net/milothemes) 整理了一篇《[201
 
 竟然！⋯⋯好吧，或許是我藝術造詣不夠，感受不太出來，你們覺得如何呢？
 
-### 本周金句
+## 本周金句
 
 1.
 

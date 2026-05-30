@@ -6,9 +6,9 @@ heroImage: './cover.jpeg'
 categories: [Weekly]
 ---
 
-### 文摘
+## 文摘
 
-#### 《大賣空》
+### 《大賣空》
 
 《[大賣空](https://zh.wikipedia.org/wiki/%E5%A4%A7%E8%B3%A3%E7%A9%BA)》（The Big Short）是一本由 Michael Lewis 所著，講述 2000 年代「[泡沫經濟](https://zh.wikipedia.org/wiki/%E6%B3%A1%E6%B2%AB%E7%BB%8F%E6%B5%8E)」題材的暢銷書籍。
 
@@ -28,7 +28,7 @@ categories: [Weekly]
 
 ―― 托爾斯泰
 
-#### 《行動的勇氣》
+### 《行動的勇氣》
 
 ![](./image2.jpg)
 
@@ -44,9 +44,9 @@ categories: [Weekly]
 
 美聯儲主席這個職位對世界經濟的影響深遠。美元是全球通行的貨幣，一旦美聯儲做出某個決定，不僅直接影響到規模龐大的美國經濟，也同時會影響全球的經濟走勢。可以說，美聯儲主席對世界的影響力可能僅次於美國總統。
 
-### 新奇
+## 新奇
 
-#### 12 的力量
+### 12 的力量
 
 現代的「[記數系統](https://zh.wikipedia.org/wiki/%E8%AE%B0%E6%95%B0%E7%B3%BB%E7%BB%9F)」雖然大部分已經被十進制給取代，但仍可以在曆法、度量衡、語言和音階上看見「[十二進制](https://zh.wikipedia.org/wiki/%E5%8D%81%E4%BA%8C%E8%BF%9B%E5%88%B6)」的影子。
 

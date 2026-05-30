@@ -6,7 +6,7 @@ heroImage: './cover.jpeg'
 categories: [Weekly]
 ---
 
-### 三皇五帝
+## 三皇五帝
 
 考古學上，鑑定文明的標準有三條：
 
@@ -20,7 +20,7 @@ categories: [Weekly]
 
 ![](./image1.jpeg)
 
-#### 什麼是三「皇」五「帝」？
+### 什麼是三「皇」五「帝」？
 
 中國古代對於皇、帝、王的區分是很明確的。
 
@@ -30,7 +30,7 @@ categories: [Weekly]
 
 ![](./image2.gif)
 
-#### 為什麼後來的王都自稱「皇帝」？
+### 為什麼後來的王都自稱「皇帝」？
 
 四大文明古國的君王，都有屬於自己的一套「稱帝」說法，例如：巴比倫的統治者[漢摩拉比](https://zh.wikipedia.org/wiki/%E6%B1%89%E8%B0%9F%E6%8B%89%E6%AF%94)自稱為「月神的後裔」、古埃及的法老則自稱是「太陽神的兒子」。
 
@@ -38,7 +38,7 @@ categories: [Weekly]
 
 ![](./image3.jpg)
 
-#### 為什麼「皇」和「帝」這些級別的人物都不見了呢？
+### 為什麼「皇」和「帝」這些級別的人物都不見了呢？
 
 發現於[美索不達米亞](https://zh.wikipedia.org/wiki/%E7%BE%8E%E7%B4%A2%E4%B8%8D%E8%BE%BE%E7%B1%B3%E4%BA%9A)地區的「[蘇美王表](https://zh.wikipedia.org/wiki/%E8%8B%8F%E7%BE%8E%E5%B0%94%E7%8E%8B%E8%A1%A8)」，列舉了蘇美文明歷代的統治者以及統治的時間。如果按照王表記載，那些早期的君王統治時間都非常長（幾萬年起跳），怎麼看都不像人類，應該是類似於三皇五帝級別的神話人物。
 
@@ -50,7 +50,7 @@ categories: [Weekly]
 
 ![](./image4.jpg)
 
-#### 創神論
+## 創神論
 
 關於「[人類的起源](https://zh.wikipedia.org/wiki/%E4%BA%BA%E7%B1%BB%E8%B5%B7%E6%BA%90)」有三個流派：
 

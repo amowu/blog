@@ -44,7 +44,7 @@ HTTP/1.1 200 OK
 1. HTTP Status **400** Bad request
 2. 只顯示 errorMessage 的 JSON 值
 
-### 1. 新增 HTTP Status 400 Method Response
+## 1. 新增 HTTP Status 400 Method Response
 
 1. 前往 API Gateway Console
 2. 進入 Method Execution
@@ -56,7 +56,7 @@ HTTP/1.1 200 OK
 
 ![](./cover.png)
 
-### 2. 新增 Lambda Error Regex Integration Response
+## 2. 新增 Lambda Error Regex Integration Response
 
 1. 進入 Integration Response
 2. 點選 Add integration response
@@ -64,7 +64,7 @@ HTTP/1.1 200 OK
 
 ![](./image1.png)
 
-### 3. 設置 Mapping Templates
+## 3. 設置 Mapping Templates
 
 1. 展開 Mapping Templates
 2. 點選 Add mapping template
@@ -74,7 +74,7 @@ HTTP/1.1 200 OK
 
 ![](./image2.png)
 
-### 4. 部署 API
+## 4. 部署 API
 
 記得點選 **Deploy API** 完成 API 的更新，然後測試返回結果是否為 **HTTP 400**。
 

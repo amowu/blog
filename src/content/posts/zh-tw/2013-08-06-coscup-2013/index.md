@@ -12,7 +12,7 @@ heroImage: './cover.jpeg'
 
 分享一些這兩天簡單的筆記。
 
-### DAY 1
+## DAY 1
 
 第一天有點小遲到，好險大會準備的 NFC 識別證快速通關，加上場地夠大，還很多位置可以坐。
 
@@ -111,7 +111,7 @@ OCP (Open Compute Project)
 
 這場講者是 [保哥](https://www.facebook.com/will.fans)，主要是介紹 [AngularJS](http://angularjs.org/) 的核心架構，非常有幫助。
 
-### DAY 2
+## DAY 2
 
 前一天結束一回到家就睡死了，所以第二天比較早起，早上是一連串跟遊戲開發相關的議程，非常期待。
 
@@ -203,7 +203,7 @@ OCP (Open Compute Project)
 
 Python 正妹。（喂 ￣▽￣)==O)￣#)3￣)☆
 
-### 心得
+## 心得
 
 今年議程非常豐富，大致上聽了：
 
@@ -223,7 +223,7 @@ Python 正妹。（喂 ￣▽￣)==O)￣#)3￣)☆
 * 遇上好多網路上 foloow 的大大 :D
 * 可以聽到其他業界朋友談論自己公司的八卦（咦？
 
-### 參考
+## 參考
 
 * [COSCUP 2013 IRC Log](https://gist.github.com/denny0223/6150643)
 * [COSCUP 2013 梗全集](https://hackpad.com/COSCUP-2013--evfJ0SJdCyQ)

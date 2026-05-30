@@ -5,7 +5,7 @@ pubDate: 'Mar 18 2020'
 heroImage: './cover.png'
 ---
 
-### 大綱
+## 大綱
 
 * 前言
 * Hahow 為什麼沒有 iOS App？
@@ -19,7 +19,7 @@ heroImage: './cover.png'
 
 [Hahow 好學校 - 一站式跨域人才學習入口](https://apps.apple.com/tw/app/hahow-%E5%A5%BD%E5%AD%B8%E6%A0%A1-%E6%9C%80%E6%9C%89%E8%B6%A3%E7%9A%84%E7%B7%9A%E4%B8%8A%E8%AA%B2%E7%A8%8B%E5%B9%B3%E5%8F%B0/id1529044948)
 
-### 前言
+## 前言
 
 最近看到一篇 The Verge [報導](https://www.theverge.com/2020/2/19/21144053/apple-publication-book-app-store-confidential-tom-sadowski)，Apple 的律師要求 App Store 的前任經理停止發行《App Store Confidential》這本書，因為此書透露了「重大的商業機密」，違反了員工與公司簽訂的合約。
 
@@ -35,7 +35,7 @@ heroImage: './cover.png'
 
 ![](./image2.png)
 
-### Hahow 為什麼沒有 iOS App？
+## Hahow 為什麼沒有 iOS App？
 
 其實 iOS App 一直都是與 Android App 同步開發的。
 
@@ -65,21 +65,21 @@ heroImage: './cover.png'
 
 歡欣鼓舞之際，本以為這次終於可以在 App Store 上看見 Hahow App 成功上架的畫面。然而，最後 Apple 還是拒絕了我們的送審。
 
-### 為什麼有了「App 內購買」還是被拒絕？
+## 為什麼有了「App 內購買」還是被拒絕？
 
 簡而言之，Apple 以 Hahow App 的 IAP 商品不適用「消耗型項目」為理由，拒絕了我們。
 
-#### 什麼是「消耗型項目」IAP？
+### 什麼是「消耗型項目」IAP？
 
 基本上，Apple IAP 提供[四種方式](https://developer.apple.com/in-app-purchase/)在 iOS App 內付費：消耗型、非消耗型、自動續期訂閱，以及非續期訂閱，後面兩種屬於訂閱制的範圍，這裡不討論，我們來看前兩種的說明：
 
-#### 消耗型項目（Consumable）
+### 消耗型項目（Consumable）
 
 > 使用者可以購買各種消耗型項目（例如遊戲中的生命或寶石）以繼續 app 內的進行。消耗型項目只可使用一次，使用之後即失效，必須再次購買。
 
 需要注意的是，這類型的 IAP，可以重複購買，但無法提供「恢復購買」的選項。
 
-#### 非消耗型項目（Non-Consumable）
+### 非消耗型項目（Non-Consumable）
 
 > 使用者可購買非消耗型項目以提升 app 內的功能。非消耗型項目只需購買一次，不會過期（例如修圖 app 中的其它濾鏡）。
 
@@ -87,7 +87,7 @@ heroImage: './cover.png'
 
 ![](./image5.png)
 
-### 為什麼 Hahow 要使用「消耗型項目」IAP？
+## 為什麼 Hahow 要使用「消耗型項目」IAP？
 
 假設 Hahow 有兩堂 100 元的課程 A 和 B，如果它們共用同一組 100 元的「非消耗型項目」IAP，那麼當使用者買了 A，那麼他就無法再購買 B，因為「非消耗型」IAP「只能購買一次」。
 
@@ -99,13 +99,13 @@ heroImage: './cover.png'
 
 但是 Apple 認為我們的「課程」不適用「消耗型項目」IAP，因為「課程」應該要「可以恢復購買」。
 
-### 為什麼 Udemy 可以使用「消耗型項目」IAP？
+## 為什麼 Udemy 可以使用「消耗型項目」IAP？
 
 當初就是因為 Udemy 使用這個方式操作，所以我們才認為可行。但是 Apple 的審核人員卻以「因為 Udemy 的課程**超過 1000 堂以上**，所以特例為他們開放」這個令人傻眼的理由，回絕了我們的申訴。
 
 我並沒有在 [App Store 審核指南](https://developer.apple.com/app-store/review/guidelines/) 上看見有這條規則，所以這就是為什麼我在文章開頭提到的「App Store 平台審核機制封閉，很多東西他們說的算」。
 
-### Hahow iOS App 接下來的計畫？
+## Hahow iOS App 接下來的計畫？
 
 Apple 的審核人員給了我們兩個建議：
 
@@ -114,7 +114,7 @@ Apple 的審核人員給了我們兩個建議：
 
 遺憾的是，2019 年 5 月，我們決定將人力投入到其它的 Hahow 專案，停止 Hahow App 的後續開發及維護 。
 
-### 結語
+## 結語
 
 很多東西到最後已經不是技術的問題，Code 能解決的都是小問題。
 
@@ -124,7 +124,7 @@ Apple 的審核人員給了我們兩個建議：
 
 ![](./image7.png)
 
-### 參考資料
+## 參考資料
 
 * [Apple tries to halt publication of App Store book allegedly containing company secrets](https://www.theverge.com/2020/2/19/21144053/apple-publication-book-app-store-confidential-tom-sadowski)
 * [In-App Purchase](https://developer.apple.com/in-app-purchase/)

@@ -56,6 +56,6 @@ npm publish
 
 完整專案可以參考我的 [GitHub](https://github.com/amowu/phaser-shim)
 
-### 參考文章
+## 參考文章
 
 * [Publishing npm packages](https://docs.npmjs.com/getting-started/publishing-npm-packages)

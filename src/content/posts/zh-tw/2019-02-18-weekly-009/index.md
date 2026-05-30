@@ -6,7 +6,7 @@ heroImage: './cover.jpg'
 categories: [Weekly]
 ---
 
-### 新聞
+## 新聞
 
 春節期間，除了「華航罷工」的新聞之外，另有一則「[抽不出國運籤](https://www.cna.com.tw/news/firstnews/201902050089.aspx)」吸引眾人目光。
 
@@ -36,7 +36,7 @@ categories: [Weekly]
 
 有興趣的人，可以深入閱讀這篇《[藍弋丰專欄：別只談修昔底德陷阱 台灣更要懂「米洛斯對話」](https://www.upmedia.mg/news_info.php?SerialNo=48759)》。
 
-### 文摘
+## 文摘
 
 ![](./image2.png)
 
@@ -44,7 +44,7 @@ categories: [Weekly]
 
 我在大學學習[線性代數](https://zh.wikipedia.org/zh-tw/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0)時，實在想不出這門課除了告訴我如何解線性方程外，還能有什麼別的用途。關於矩陣的許多概念，譬如[特征值](https://zh.wikipedia.org/wiki/%E7%89%B9%E5%BE%81%E5%80%BC%E5%92%8C%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F)等，更是脫離日常生活，看不到可以應用的地方。當時修這些課，完全是為了取得學位。我想，今天大部分的學生恐怕也有過類似的經歷。直到後來從事了軟體工程相關的工作一段時間之後，我才發現數學家們提出的那些概念和算法，是有實際應用的意義的。
 
-#### 《數學之美》
+### 《數學之美》
 
 ![](./image3.png)
 
@@ -66,7 +66,7 @@ categories: [Weekly]
 2. 任何粒子或物體的運動必須滿足[決定論](https://zh.wikipedia.org/wiki/%E6%B1%BA%E5%AE%9A%E8%AB%96)的方程式（[薛丁格方程式](https://zh.wikipedia.org/wiki/%E8%96%9B%E5%AE%9A%E8%B0%94%E6%96%B9%E7%A8%8B)或[狄拉克方程式](https://zh.wikipedia.org/wiki/%E7%8B%84%E6%8B%89%E5%85%8B%E6%96%B9%E7%A8%8B%E5%BC%8F)）。也就是在時間為零的時候，如果知道粒子的位置及速度，那麼時間 t 的時候，粒子的位置及速度就可以被計算出來。但是[哥本哈根詮釋](https://zh.wikipedia.org/wiki/%E5%93%A5%E6%9C%AC%E5%93%88%E6%A0%B9%E8%A9%AE%E9%87%8B)卻把波函數的平方當作粒子出現的或然率，非常的不合理。
 3. 超光速的[量子糾纏](https://zh.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E7%BA%8F%E7%B5%90)現象。有連結的兩量子系統，處於混沌不定的[疊加狀態](https://zh.wikipedia.org/wiki/%E6%80%81%E5%8F%A0%E5%8A%A0%E5%8E%9F%E7%90%86)，不論兩者相距多遠，只要其中一個或一部分被儀器測量而確定狀態時，另一個也瞬間被決定，其之間訊息的傳遞是遠超過光速的（違反相對論），因此被愛因斯坦提出 [EPR 悖論](https://zh.wikipedia.org/wiki/%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6-%E6%B3%A2%E5%A4%9A%E5%B0%94%E6%96%AF%E5%9F%BA-%E7%BD%97%E6%A3%AE%E4%BD%AF%E8%B0%AC)批評為「幽靈般的超距作用」。
 
-#### 《靈界的科學》
+### 《靈界的科學》
 
 ![](./image4.jpg)
 

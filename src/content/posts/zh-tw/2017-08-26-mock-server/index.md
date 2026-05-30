@@ -15,7 +15,7 @@ heroImage: './cover.jpg'
 * 什麼是契約測試？
 * 為什麼需要契約測試？
 
-### 什麼是 Mock Server？
+## 什麼是 Mock Server？
 
 下圖是傳統的前後端分離架構：
 
@@ -29,18 +29,18 @@ heroImage: './cover.jpg'
 
 ![](./image3.png)
 
-### 為什麼需要 Mock Server？
+## 為什麼需要 Mock Server？
 
 一句話，因為有了 Mock Server 之後，前後端就能夠並行開發。
 
-### 如何使用 Mock Server？
+## 如何使用 Mock Server？
 
 這裡會介紹兩種方法：
 
 1. Postman Mock Service
 2. Puer Mock Server
 
-### Postman Mock Service
+## Postman Mock Service
 
 [Postman](https://www.getpostman.com/) 是前後端在開發上很常用到的一款 HTTP Client 應用程式，主要是拿來測試 API，除了有好用的 Collection Test Runner 之外（詳見《[基於 Postman 的 API 自動化測試](https://segmentfault.com/a/1190000005055899)》），其實 Postman 還有提供 Mock Service 的功能，大致流程如下：
 
@@ -54,7 +54,7 @@ heroImage: './cover.jpg'
 
 但是使用 Postman Mock Service 會碰到一個問題，雖然 Postman 可以同時 mock 多筆 API，但是一個頁面可能會同時存在「需要 mock 的 API」和「後端已經寫好的 API」。
 
-### Puer Mock Server
+## Puer Mock Server
 
 為了解決上面碰到的問題，找到了這個 open-source 的 mock server：[puer-mock](https://github.com/ufologist/puer-mock)。
 
@@ -128,7 +128,7 @@ $ curl http://localhost:8080/api/users
 
 更多的配置可以參考 [puer-mock](https://github.com/ufologist/puer-mock)、[puer](https://github.com/leeluolee/puer) 和 [Mock.js](https://github.com/nuysoft/Mock)。
 
-### 什麼是契約測試？
+## 什麼是契約測試？
 
 契約測試（Integration Contract Test）的流程大致如下：
 
@@ -142,12 +142,12 @@ $ curl http://localhost:8080/api/users
 
 ![](./image5.png)
 
-### 為什麼需要契約測試？
+## 為什麼需要契約測試？
 
 1. 防止前後端其中一方更改 API 之後，另一方卻不知情（因為 CI 會失敗）
 2. 契約需要一直保持在最新的狀態，代表 API 文件有人維護
 
-### 結論
+## 結論
 
 1. 有一個 Mock Server 對於前後端的並行開發是有幫助的
 2. 加入契約測試可以避免前後端任一方修改 API 之後，導致另一方程式崩潰的狀況
@@ -159,7 +159,7 @@ $ curl http://localhost:8080/api/users
 
 相信這對整個團隊的開發穩定度會有很大的幫助，從此前端與後端過著幸福快樂的日子。
 
-### 參考資料
+## 參考資料
 
 * [你是如何構建 Web 前端 Mock Server 的？](https://www.zhihu.com/question/35436669)
 * [如何處理好前後端分離的 API 問題](https://github.com/phodal/fe/blob/master/chapters/chapter-13.md)

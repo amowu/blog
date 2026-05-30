@@ -30,7 +30,7 @@ heroImage: './cover.png'
 * 測試 AWS API Gateway
 * 將 API Gateway endpoint 加入至 Slack Slash Command
 
-### Slack Slash Commands 的運作機制
+## Slack Slash Commands 的運作機制
 
 ![](./image2.png)
 
@@ -76,7 +76,7 @@ response_url=YOUR_HOOK_URL
 
 Slack Slash Commands 有 3000 ms 的 response timeout 限制
 
-### 建立一個簡單的 AWS Lambda function
+## 建立一個簡單的 AWS Lambda function
 
 ![](./image3.png)
 
@@ -100,7 +100,7 @@ exports.handler = function(event, context) {
 你好世界!
 ```
 
-### 建立一個簡單的 AWS API Gateway 執行 Lambda function
+## 建立一個簡單的 AWS API Gateway 執行 Lambda function
 
 ![](./image4.png)
 
@@ -123,7 +123,7 @@ exports.handler = function(event, context) {
 你好世界!
 ```
 
-### 使用 Lambda 呼叫豆瓣電影 API
+## 使用 Lambda 呼叫豆瓣電影 API
 
 ![](./image5.png)
 
@@ -233,7 +233,7 @@ exports.handler = function(event, context) {
 }
 ```
 
-### 測試 AWS API Gateway
+## 測試 AWS API Gateway
 
 ![](./image6.png)
 
@@ -263,7 +263,7 @@ exports.handler = function(event, context) {
 }
 ```
 
-### 將 API Gateway endpoint 加入至 Slack Slash Command
+## 將 API Gateway endpoint 加入至 Slack Slash Command
 
 ![](./image7.png)
 
@@ -363,7 +363,7 @@ exports.handler = function(event, context) {
 1. 重新壓縮 lambda.zip 然後上傳
 2. 在 Slack channel 輸入 /movie 測試結果
 
-### 總結
+## 總結
 
 * 熟悉之後，稍微修改一下，把豆瓣 API 換成其它 API，又可以誕生出更多有趣的 Slash Commands！
 * 2015/12/30: 更新範例 [GitHub repo Google 大神](https://github.com/amowu/slack-lambda-google)

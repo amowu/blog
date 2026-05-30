@@ -20,7 +20,7 @@ categories: [Weekly]
 
 作為一路走過昭和、平成、令和時代的三朝元老級玩家，見證了這 30 年間五花八門的遊戲作品問世。最近看了 YouTube 頻道 [攻壳 Gamker](https://www.youtube.com/channel/UCLgGLSFMZQB8c0WGcwE49Gw) 的《[十大影響我的遊戲](https://www.youtube.com/watch?v=oY4DxPRV0Bs)》系列之後，也想來寫一篇影響我一生的十大遊戲。
 
-### 第十位：熱血行進曲（FC）
+## 第十位：熱血行進曲（FC）
 
 ![](./image3.png)
 

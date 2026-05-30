@@ -5,7 +5,7 @@ pubDate: 'Mar 01 2020'
 heroImage: './cover.png'
 ---
 
-### 大綱
+## 大綱
 
 * 什麼是「無限環境」？
 * 什麼是 Netlify Deploy Previews？
@@ -14,7 +14,7 @@ heroImage: './cover.png'
 * 附錄
 * 參考資料
 
-### 什麼是「無限環境」？
+## 什麼是「無限環境」？
 
 大家常用的 [GitHub flow](https://guides.github.com/introduction/flow/) 其實有一個常常被忽略的重點 — — 合併前部署。
 
@@ -39,17 +39,17 @@ heroImage: './cover.png'
 
 這是第一篇文章，介紹如何透過 Netlify 的 Deploy Previews 服務，建立靜態網頁的無限環境。
 
-### 什麼是 Netlify Deploy Previews？
+## 什麼是 Netlify Deploy Previews？
 
 [Netlify](https://www.netlify.com/) 是一個類似 [Heroku](https://www.heroku.com/) 的 All-in-one [PaaS](https://zh.wikipedia.org/zh-tw/%E5%B9%B3%E5%8F%B0%E5%8D%B3%E6%9C%8D%E5%8A%A1)，提供各種現代 web 專案會用到的自動化服務，例如：靜態網站部署、CDN、持續交付和一鍵配置 HTTPS 等。
 
 其中 [Deploy Previews](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/) 這項服務，可以將 GitHub repository 中的每個 pull request 部署到**唯一**的 URL，與 staging 和 production 環境的完全不同。你和你的團隊可以在合併到主分支、並且部署到正式環境之前，提前看到更改的外觀以及驗收功能是否正確。
 
-### 快速入門指南
+## 快速入門指南
 
 這篇文章會以時下最流行的 [Create React App](https://create-react-app.dev/) 為例，示範如何實現 React 網站的無限環境。
 
-#### 步驟一、建立 React 網站
+### 步驟一、建立 React 網站
 
 透過 `npx create-react-app` 指令，快速產生一個 React App 專案：
 
@@ -63,7 +63,7 @@ $ npm start
 
 ![](./image2.png)
 
-#### 步驟二、建立 GitHub repository
+### 步驟二、建立 GitHub repository
 
 這篇文章以 GitHub 為例，Netlify 同時也支援 GitLab 和 Bitbucket。
 
@@ -80,7 +80,7 @@ $ git commit -m "chore: create react app"
 $ git push origin master
 ```
 
-#### 步驟三、註冊＆配置 Netlify
+### 步驟三、註冊＆配置 Netlify
 
 前往 Netlify [註冊](https://app.netlify.com/signup) 頁面，這裡以連結 GitHub 帳號的方式為例：
 
@@ -131,7 +131,7 @@ $ git push origin master
 
 到這裡，就完成了 Netlift 的基本配置。接下來，介紹如何實現 Deploy Previews。
 
-#### 最終步驟、玩轉 Deploy Previews
+### 最終步驟、玩轉 Deploy Previews
 
 其實也不用特別配置，因為 Netlify 預設就會開啟 Deploy Previews 這個功能。我們直接送一個 Pull Request 試試。
 
@@ -167,7 +167,7 @@ $ git push -u origin feature/hello-world
 
 未來 Code Reviewer 驗收 PR 的時機點，就可以發生在 merge master 之前，大大降低了「上線之後才發現問題」的發生機率。
 
-### 總結
+## 總結
 
 Google 的 [Code Review Developer Guide](https://google.github.io/eng-practices/review/) 曾經提到，看 PR 的優先順序，應該是先跑跑看結果是否正確。如果一開始就投入大量時間去 review 程式碼，但是發現跑出來的結果根本是錯的，那麼這其實是很浪費人力成本的。
 
@@ -177,15 +177,15 @@ Google 的 [Code Review Developer Guide](https://google.github.io/eng-practices/
 
 真實的世界，不會只有靜態網站那麼單純。下一篇，我會介紹如何透過 Heroku 的 [Review Apps](https://devcenter.heroku.com/articles/github-integration-review-apps) 來實現動態網站的無限環境，敬請期待。
 
-### 附錄
+## 附錄
 
-#### 如何刪除安裝在 GitHub repository 的 Netlify app？
+### 如何刪除安裝在 GitHub repository 的 Netlify app？
 
 如果之後不需要 Deploy Previews 這個服務，可以前往安裝的 repository 頁面，依序執行以下步驟：
 
 Settings > Integrations & services > Installed GitHub Apps > Netlify > Configure > Uninstall Netlify > Uninstall
 
-#### 可以套用在 components library 嗎？
+### 可以套用在 components library 嗎？
 
 假如你的專案不是網頁應用，而是元件庫（例如 [nwb](https://github.com/insin/nwb) 的 [React Components and Libraries](https://github.com/insin/nwb/blob/master/docs/guides/ReactComponents.md)）。那麼，通常專案會搭配 [Storybook](https://storybook.js.org/) 這個工具一起協助開發。
 
@@ -194,7 +194,7 @@ Settings > Integrations & services > Installed GitHub Apps > Netlify > Configure
 * Build command：`npm run build-storybook -- -c .storybook`
 * Publish directory：`storybook-static`
 
-### 參考資料
+## 參考資料
 
 * [真正的敏捷工作流 — — GitHub flow](https://www.infoq.cn/article/ICx4zr8mpIYO6kD9Qveb)
 * [Introducing Deploy Previews in Netlify](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/)

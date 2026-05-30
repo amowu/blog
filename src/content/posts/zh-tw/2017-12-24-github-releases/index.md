@@ -7,7 +7,7 @@ heroImage: './cover.png'
 
 2017 年初的時候，曾經寫了《[如何自動化 release 的流程？](https://blog.amowu.com/posts/2017-01-24-how-to-automate-js-release/)》這篇文章，介紹了如何利用 [semantic-release](https://github.com/semantic-release/semantic-release) 和 [TravisCI](https://travis-ci.org/) 自動化 GitHub Releases 和 NPM publish 這件事。這次要介紹的是如何直接透過 [Probot](https://probot.github.io/) 機器人做到 GitHub Releases。
 
-### 大綱
+## 大綱
 
 * 什麼是 GitHub Releases？
 * GitHub Releases 有什麼問題？
@@ -15,7 +15,7 @@ heroImage: './cover.png'
 * 什麼是 Conventional Release Bot？
 * 為什麼要用 Conventional Release Bot？
 
-### 什麼是 GitHub Releases？
+## 什麼是 GitHub Releases？
 
 [GitHub Releases](https://help.github.com/articles/about-releases/) 是 GitHub 提供給每個專案在釋出（Release）新版軟體時，用來紀錄更新內容（Change Log）的頁面。
 
@@ -27,7 +27,7 @@ GitHub Releases 的基礎是建立在 [Git tags](https://git-scm.com/book/en/v2/
 
 更多有關於 Git tags 的資訊可以參考 GitHub 的《[Working With Tags](https://help.github.com/articles/working-with-tags/)》。
 
-### GitHub Releases 有什麼問題？
+## GitHub Releases 有什麼問題？
 
 我們團隊在執行 release 的過程中碰到過不少問題，總結如下：
 
@@ -40,7 +40,7 @@ GitHub Releases 的基礎是建立在 [Git tags](https://git-scm.com/book/en/v2/
 
 ![](./image2.png)
 
-### 什麼是 Conventional Commits？
+## 什麼是 Conventional Commits？
 
 Conventional Commits 是 [conventionalcommits.org](https://conventionalcommits.org/) 在維護的一份 Git commit message 規範。
 
@@ -74,7 +74,7 @@ Commit types 除了 `fix` 和 `feat` 之外，其它 types 也是允許的，例
 
 更多細節可以參考 [Conventional Commits Specification](https://conventionalcommits.org/)。
 
-### 什麼是 Conventional Release Bot？
+## 什麼是 Conventional Release Bot？
 
 [Conventional Release Bot](https://github.com/apps/conventional-release-bot) 是 [Hahow](https://hahow.in/) 開源的 GitHub 機器人，它能夠根據 [Conventional Commits](https://conventionalcommits.org/) 的規範，自動幫你產生 GitHub Releases 和 Git tags。
 
@@ -93,7 +93,7 @@ Commit types 除了 `fix` 和 `feat` 之外，其它 types 也是允許的，例
 
 如果機器人沒有在 commits 裡發現 `feat`、`fix` 或 `BREAKING CHANGE`，則會跳過建立 GitHub Releases 的步驟。
 
-### 為什麼要用 Conventional Release Bot？
+## 為什麼要用 Conventional Release Bot？
 
 總結一下 Conventional Release Bot 的優點：
 

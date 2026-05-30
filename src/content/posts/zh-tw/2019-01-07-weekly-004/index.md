@@ -6,9 +6,9 @@ heroImage: './cover.jpg'
 categories: [Weekly]
 ---
 
-### 新聞
+## 新聞
 
-#### 我們真的有「自由意志」嗎？
+### 我們真的有「自由意志」嗎？
 
 上周，Netflix 推出了互動式電影《[黑鏡：潘達斯奈基](https://www.netflix.com/tw/title/80988062)》，你玩出幾星評價的結局呢？
 
@@ -46,9 +46,9 @@ categories: [Weekly]
 
 反過來想，意識也許只是一種精神污染（[函數副作用 Side effect](https://zh.wikipedia.org/wiki/%E5%87%BD%E6%95%B0%E5%89%AF%E4%BD%9C%E7%94%A8)），人類不屬於純函數（[Pure Function](https://zh.wikipedia.org/wiki/%E7%BA%AF%E5%87%BD%E6%95%B0)）。
 
-### 文摘
+## 文摘
 
-#### 工程師的五個等級
+### 工程師的五個等級
 
 身為一個喜歡科幻作品的理工男，文學作品的賞析對我來說一直都是罩門。
 
@@ -80,9 +80,9 @@ categories: [Weekly]
 
 ![](./image5.png)
 
-### 本周圖片
+## 本周圖片
 
-#### 為什麼人工智慧不可能取代人類
+### 為什麼人工智慧不可能取代人類
 
 Vue.js 的作者尤雨溪最近在《[vue 和 react 優點分別是什麼？](https://www.zhihu.com/question/301860721/answer/545031906)》回覆之中，給出了一段話：
 
@@ -100,9 +100,9 @@ Vue.js 的作者尤雨溪最近在《[vue 和 react 優點分別是什麼？](ht
 
 至於什麼是「不可計算問題」？舉個例子：某個男生特別壞，在別人看來就是個渣男，但是你喜歡的女生偏偏就是特別喜歡他。這個問題就算放到 2049 年，Siri 也還是無法給出一個令你滿意的答案。
 
-### 新奇
+## 新奇
 
-#### 如果全世界的人都只說一種語言該有多好
+### 如果全世界的人都只說一種語言該有多好
 
 YouTuber 啾啾鞋在《[世界語簡介](https://www.youtube.com/watch?v=iyl0zNntnOw)》的影片中，分享了一套叫「[世界語](https://zh.wikipedia.org/wiki/%E4%B8%96%E7%95%8C%E8%AF%AD)」的語言。
 
@@ -126,7 +126,7 @@ YouTuber 啾啾鞋在《[世界語簡介](https://www.youtube.com/watch?v=iyl0zN
 
 ![](./image8.png)
 
-### 本周金句
+## 本周金句
 
 > 除非違反物理定律，否則幾乎任何事情都是可能的。
 

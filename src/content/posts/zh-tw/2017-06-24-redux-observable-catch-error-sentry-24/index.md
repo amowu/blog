@@ -90,7 +90,7 @@ export default (initialState = {}) =>
   );
 ```
 
-### 參考資料
+## 參考資料
 
 * [redux-raven-middleware](https://github.com/ngokevin/redux-raven-middleware)
 * [raven-for-redux](https://github.com/captbaritone/raven-for-redux)
