@@ -2,6 +2,7 @@
 title: 'Development Tools'
 description: '不知不覺，這個月的文章還沒想好要寫什麼，七月就過了…'
 pubDate: 'Aug 02 2012'
+categories: [Tech]
 ---
 
 不知不覺，這個月的文章還沒想好要寫什麼，七月就過了…

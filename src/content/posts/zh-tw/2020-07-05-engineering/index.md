@@ -3,6 +3,7 @@ title: '工程師的世界越複雜，你的世界就越簡單'
 description: '藝術家、科學家、發明家還有工匠，相比工程師有什麼不同之處？'
 pubDate: 'Jul 05 2020'
 heroImage: './cover.jpeg'
+categories: [Tech]
 ---
 
 藝術家、科學家、發明家還有工匠，相比工程師有什麼不同之處？

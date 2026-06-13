@@ -3,6 +3,7 @@ title: 'Code Coverage with CircleCI + Codecov'
 description: '最近的案子用到 Redux + React，因為它 Pure Function 的特性，所以 單元測試 很容易寫，順便也趁機會玩一下 程式碼覆蓋率 （Code Coverage）。'
 pubDate: 'Nov 02 2015'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 最近的案子用到 [Redux](https://github.com/rackt/redux) + [React](https://facebook.github.io/react/)，因為它 [Pure Function](https://en.wikipedia.org/wiki/Pure_function) 的特性，所以 [單元測試](https://en.wikipedia.org/wiki/Unit_testing) 很容易寫，順便也趁機會玩一下 [程式碼覆蓋率](https://www.blogger.com/%28https://en.wikipedia.org/wiki/Code_coverage%29) （Code Coverage）。

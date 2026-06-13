@@ -2,6 +2,7 @@
 title: '如何使用 RxJS 處理分頁 API'
 description: '這篇文章會以 node-github 的 getCommits API 為例，介紹如何使用 RxJS 取得所有分頁的 commits 結果。'
 pubDate: 'Dec 09 2017'
+categories: [Tech]
 ---
 
 這篇文章會以 [node-github](https://github.com/octokit/node-github) 的 `getCommits` API 為例，介紹如何使用 RxJS 取得所有分頁的 commits 結果。

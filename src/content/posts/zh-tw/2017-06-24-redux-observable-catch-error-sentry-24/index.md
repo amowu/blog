@@ -2,6 +2,7 @@
 title: '如何發送 redux-observable 的 catch error 至 Sentry'
 description: '我們團隊目前使用 Sentry 這個服務作 error tracking，JavaScript 或 React 的基本安裝方法在 官方文件 都可以找到，這裡就不贅述。'
 pubDate: 'Jun 24 2017'
+categories: [Tech]
 ---
 
 我們團隊目前使用 [Sentry](https://sentry.io/) 這個服務作 error tracking，JavaScript 或 React 的基本安裝方法在 [官方文件](https://docs.sentry.io/clients/javascript/integrations/react/) 都可以找到，這裡就不贅述。

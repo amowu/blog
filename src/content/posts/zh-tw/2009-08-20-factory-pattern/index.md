@@ -2,6 +2,7 @@
 title: 'Factory pattern 工廠模式'
 description: '距離上一篇 Strategy pattern 策略模式 已經兩個多月了，一直拖到現在才生出這篇文章…orz。'
 pubDate: 'Aug 20 2009'
+categories: [Tech]
 ---
 
 距離上一篇 [Strategy pattern 策略模式](https://blog.amowu.com/posts/2009-05-20-strategy-pattern-20/) 已經兩個多月了，一直拖到現在才生出這篇文章…orz。

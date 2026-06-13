@@ -3,6 +3,7 @@ title: '如何寫一個 Arduino Library？'
 description: '假設要寫一個摩斯密碼（telegraph）的 library：'
 pubDate: 'Apr 26 2013'
 heroImage: './cover.jpg'
+categories: [Tech]
 ---
 
 假設要寫一個摩斯密碼（telegraph）的 library：

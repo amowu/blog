@@ -3,6 +3,7 @@ title: '為什麼 Netflix 截圖會變黑？聊聊 DRM 技術與未來趨勢'
 description: '為什麼 Netflix 截圖會變黑？聊聊 DRM 技術與未來趨勢 拆解影音防盜的技術拉鋸戰：一位前端工程師在建置 VOD 系統時的實務心得'
 pubDate: 'May 04 2026'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 ## 從一張黑屏截圖說起

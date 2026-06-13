@@ -3,6 +3,7 @@ title: '使用 Heptabase 學習複雜的程式架構'
 description: '這是我在公司的前端聚會上分享的主題，介紹 Heptabase 這個筆記工具，以及我如何使用它來完成「Hahow for Business 企業上傳串 JW Player」的研究過程。大綱如下：'
 pubDate: 'May 18 2024'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 這是我在公司的前端聚會上分享的主題，介紹 Heptabase 這個筆記工具，以及我如何使用它來完成「Hahow for Business 企業上傳串 JW Player」的研究過程。大綱如下：

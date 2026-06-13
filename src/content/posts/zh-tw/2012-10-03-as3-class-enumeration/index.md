@@ -2,6 +2,7 @@
 title: 'AS3 Class Enumeration'
 description: '筆記筆記..'
 pubDate: 'Oct 03 2012'
+categories: [Tech]
 ---
 
 筆記筆記..

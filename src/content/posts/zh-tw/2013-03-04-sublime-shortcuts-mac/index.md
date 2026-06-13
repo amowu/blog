@@ -2,6 +2,7 @@
 title: 'Sublime Text 2 Shortcuts (Mac OSX)'
 description: 'Default'
 pubDate: 'Mar 04 2013'
+categories: [Tech]
 ---
 
 ### General

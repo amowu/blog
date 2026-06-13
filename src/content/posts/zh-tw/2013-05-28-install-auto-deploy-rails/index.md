@@ -2,6 +2,7 @@
 title: '從無到有：安裝＆自動部署 Ruby on Rails 網站'
 description: '這個月把網站從 Amazon EC2 搬回自己的 server，目前整個環境是 Linux（Ubuntu）+ Apache + Ruby on Rails 在跑，筆記一下從無到有的配置方法：'
 pubDate: 'May 28 2013'
+categories: [Tech]
 ---
 
 這個月把網站從 Amazon EC2 搬回自己的 server，目前整個環境是 Linux（Ubuntu）+ Apache + Ruby on Rails 在跑，筆記一下從無到有的配置方法：

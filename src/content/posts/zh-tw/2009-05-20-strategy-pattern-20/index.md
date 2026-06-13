@@ -2,6 +2,7 @@
 title: 'Strategy pattern 策略模式'
 description: '這篇文章是我打算要寫的 Design pattern 系列中的第一篇，在我大學三年級的時候，修了系上開的視窗程式設計課程，開課教授也是我的專題指導教授，這堂課老師教了我們很多關於 programming design pattern 的觀念。'
 pubDate: 'May 20 2009'
+categories: [Tech]
 ---
 
 這篇文章是我打算要寫的 Design pattern 系列中的第一篇，在我大學三年級的時候，修了系上開的視窗程式設計課程，開課教授也是我的專題指導教授，這堂課老師教了我們很多關於 programming design pattern 的觀念。

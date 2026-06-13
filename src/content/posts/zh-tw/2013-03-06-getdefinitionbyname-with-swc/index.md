@@ -2,6 +2,7 @@
 title: 'getDefinitionByName with swc'
 description: '一般 Flash 程式開發時，取資源的方式有兩種：'
 pubDate: 'Mar 06 2013'
+categories: [Tech]
 ---
 
 一般 Flash 程式開發時，取資源的方式有兩種：

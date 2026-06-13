@@ -3,6 +3,7 @@ title: 'Hello PureMVC！'
 description: '第一次聽到 PureMVC 的時候大概是兩年前，那時候就對這套 MVC Framework 很感興趣，不過當時對於它的架構是有看沒有懂，就一直拖到了現在。'
 pubDate: 'Mar 29 2011'
 heroImage: './cover.jpeg'
+categories: [Tech]
 ---
 
 第一次聽到 PureMVC 的時候大概是兩年前，那時候就對這套 MVC Framework 很感興趣，不過當時對於它的架構是有看沒有懂，就一直拖到了現在。

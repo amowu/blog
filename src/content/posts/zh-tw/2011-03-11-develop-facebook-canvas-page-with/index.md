@@ -2,6 +2,7 @@
 title: 'Develop Facebook Canvas Page with CodeIgniter'
 description: '這篇文章是介紹如何使用 CodeIgniter 這個 PHP Framework 來初步架構出 MVC 的環境, 並且開發一個簡單的 Facebook Canvas Page。'
 pubDate: 'Mar 11 2011'
+categories: [Tech]
 ---
 
 **這篇文章是介紹如何使用 CodeIgniter 這個 PHP Framework 來初步架構出 MVC 的環境, 並且開發一個簡單的 Facebook Canvas Page。**

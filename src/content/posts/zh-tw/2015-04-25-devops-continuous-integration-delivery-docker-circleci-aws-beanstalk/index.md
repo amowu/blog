@@ -3,6 +3,7 @@ title: 'DevOps：持續整合＆持續交付（Docker、CircleCI、AWS）'
 description: '這篇文章將一步一步介紹如何使用 Docker、GitHub Flow、CircleCI、AWS Elastic Beanstalk 與 Slack 來完成持續整合與持續交付的開發流程。'
 pubDate: 'Apr 25 2015'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 這篇文章將一步一步介紹如何使用 Docker、GitHub Flow、CircleCI、AWS Elastic Beanstalk 與 Slack 來完成**持續整合**與**持續交付**的開發流程。

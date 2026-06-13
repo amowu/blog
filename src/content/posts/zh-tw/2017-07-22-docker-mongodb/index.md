@@ -2,6 +2,7 @@
 title: '如何使用 Docker 切換不同的 MongoDB'
 description: '在開發前端的時候，常常會碰到想要回到 migration 之前的 MongoDB 資料結構來除錯，如果只使用本地安裝的 MongoDB，操作上會很麻煩，所以這篇文章會說明如何在本機不安裝 MongoDB 的環境下，使用 Docker 準備多份 MongoDB 資料庫。'
 pubDate: 'Jul 22 2017'
+categories: [Tech]
 ---
 
 在開發前端的時候，常常會碰到想要回到 migration 之前的 MongoDB 資料結構來除錯，如果只使用本地安裝的 MongoDB，操作上會很麻煩，所以這篇文章會說明如何在本機不安裝 MongoDB 的環境下，使用 Docker 準備多份 MongoDB 資料庫。

@@ -2,6 +2,7 @@
 title: 'COSCUP 2012'
 description: '今年很幸運的有搶到入場資格，這也是小弟第一次參加 COSCUP，趁現在剛結束滿腔熱血的狀態下來寫篇心得文。'
 pubDate: 'Aug 19 2012'
+categories: [Tech]
 ---
 
 今年很幸運的有搶到入場資格，這也是小弟第一次參加 [COSCUP](http://coscup.org/)，趁現在剛結束滿腔熱血的狀態下來寫篇心得文。

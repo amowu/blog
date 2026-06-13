@@ -3,6 +3,7 @@ title: 'Serverless！使用 AWS 開發 Slack Slash Commands'
 description: '本文介紹如何使用 AWS Lambda & AWS API Gateway 搭建一個不需要伺服器的環境，提供 Slack Slash Commands 查詢豆瓣電影。'
 pubDate: 'Dec 05 2015'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 本文介紹如何使用 [AWS Lambda](https://aws.amazon.com/lambda/) & [AWS API Gateway](https://aws.amazon.com/api-gateway/) 搭建一個不需要伺服器的環境，提供 [Slack Slash Commands](https://api.slack.com/slash-commands) 查詢豆瓣電影。

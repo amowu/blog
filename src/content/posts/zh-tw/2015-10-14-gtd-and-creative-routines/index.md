@@ -3,6 +3,7 @@ title: 'GTD＆Creative Routines'
 description: '這是一篇勉勵我自己如何實行 GTD & Creative Routines 的一套方法。'
 pubDate: 'Oct 14 2015'
 heroImage: './cover.jpg'
+categories: [Tech]
 ---
 
 這是一篇勉勵我自己如何實行 GTD & Creative Routines 的一套方法。

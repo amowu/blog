@@ -3,6 +3,7 @@ title: 'Trello workflow'
 description: '團隊開發的網頁遊戲《末日少女》已經上市快兩個月了，成績比當初想像中還好，相較於 Gu Morning，這次《末日少女》的開發學到很多寶貴的經驗，稍微鬆口氣之餘，也有許多需要檢討改善的地方，而《末日少女》Mobile…'
 pubDate: 'Oct 01 2013'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 團隊開發的網頁遊戲[《末日少女》](http://tw.new.beanfun.com/xd/www/index.html)已經上市快兩個月了，成績比當初想像中還好，相較於 [Gu Morning](http://www.gamania.com/mobilegame/gumorning/ch/index.html)，這次《末日少女》的開發學到很多寶貴的經驗，稍微鬆口氣之餘，也有許多需要檢討改善的地方，而《末日少女》Mobile 版其實也已經開發好一陣子了，最近這個專案只剩下我一個人交到我手上負責，趁這個機會導入一些新的開發方式，也 PO 上來分享心得。

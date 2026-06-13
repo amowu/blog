@@ -2,6 +2,7 @@
 title: '如何正確處理 AWS API Gateway 的 Lambda Error Status'
 description: '翻譯自原文 Error handling in AWS API Gateway with Lambda'
 pubDate: 'Mar 09 2016'
+categories: [Tech]
 ---
 
 翻譯自原文 [Error handling in AWS API Gateway with Lambda](https://medium.com/@pahud/error-handling-in-aws-api-gateway-with-lambda-28fb86b3ea1e)

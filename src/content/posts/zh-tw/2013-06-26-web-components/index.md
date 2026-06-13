@@ -3,6 +3,7 @@ title: 'Web Components'
 description: '今天想要跟大家聊聊 Web Components 這個新玩具，說是新玩具，其實這個概念已經發展有段時間了，尤其筆者本身是玩 Flash 技術出身的，發現 Web Components 跟 Flex Component 差不多，所以就來分享一些心得。'
 pubDate: 'Jun 26 2013'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 今天想要跟大家聊聊 Web Components 這個新玩具，說是新玩具，其實這個概念已經發展有段時間了，尤其筆者本身是玩 Flash 技術出身的，發現 Web Components 跟 [Flex Component](http://www.adobe.com/devnet/flex/articles/creating_components.html) 差不多，所以就來分享一些心得。

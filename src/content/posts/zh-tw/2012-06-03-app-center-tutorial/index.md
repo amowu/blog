@@ -2,6 +2,7 @@
 title: 'App Center Tutorial'
 description: '本篇翻譯自 Facebook 開發者頁面 的 App Center Tutorial'
 pubDate: 'Jun 03 2012'
+categories: [Tech]
 ---
 
 本篇翻譯自 [Facebook 開發者頁面](https://developers.facebook.com/) 的 [App Center Tutorial](https://developers.facebook.com/docs/guides/appcenter/)

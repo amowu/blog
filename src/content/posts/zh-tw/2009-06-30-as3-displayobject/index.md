@@ -2,6 +2,7 @@
 title: 'AS3 如何複製 DisplayObject'
 description: '最近正在寫一個 FLASH 的相片大頭貼截取程式，碰到了一個複製 MovieClip 的問題，AS3 已經沒有 AS2 的 duplicateMovie() 方法可以用，所以我找了一些解決方法分享上來。'
 pubDate: 'Jun 30 2009'
+categories: [Tech]
 ---
 
 最近正在寫一個 FLASH 的相片大頭貼截取程式，碰到了一個複製 MovieClip 的問題，AS3 已經沒有 AS2 的 `duplicateMovie()` 方法可以用，所以我找了一些解決方法分享上來。

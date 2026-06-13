@@ -2,6 +2,7 @@
 title: 'Javascript and this'
 description: '筆記一個 javascript 的特性。'
 pubDate: 'May 15 2012'
+categories: [Tech]
 ---
 
 筆記一個 javascript 的特性。

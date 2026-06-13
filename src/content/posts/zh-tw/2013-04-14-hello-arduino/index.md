@@ -3,6 +3,7 @@ title: 'Hello Arduino!'
 description: '說來慚愧，去年才知道有 Arduino 這麼好玩的東西，連國外小朋友都知道它有多火紅！（不過最近好像是某樹莓派比較牛）。'
 pubDate: 'Apr 14 2013'
 heroImage: './cover.jpg'
+categories: [Tech]
 ---
 
 說來慚愧，去年才知道有 Arduino 這麼好玩的東西，連國外小朋友都知道它有多火紅！（不過最近好像是某樹莓派比較牛）。

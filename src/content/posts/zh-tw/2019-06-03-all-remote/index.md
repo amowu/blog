@@ -3,6 +3,7 @@ title: '全遠端工作'
 description: '遠端工作並非一個需要克服的挑戰。而是一個明顯的商業優勢。'
 pubDate: 'Jun 03 2019'
 heroImage: './cover.jpeg'
+categories: [Tech]
 ---
 
 遠端工作並非一個需要克服的挑戰。而是一個明顯的商業優勢。

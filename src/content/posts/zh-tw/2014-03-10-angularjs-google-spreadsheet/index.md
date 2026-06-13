@@ -3,6 +3,7 @@ title: 'AngularJS + Google Spreadsheet'
 description: '概要'
 pubDate: 'Mar 10 2014'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 ## 概要

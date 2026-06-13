@@ -3,6 +3,7 @@ title: 'COSCUP 2013'
 description: '今年是第二次參加開源人年度聚會 COSCUP，很幸運的在 47 秒內搶到限量 500 張的門票，和去年比較不一樣的地方：'
 pubDate: 'Aug 06 2013'
 heroImage: './cover.jpeg'
+categories: [Tech]
 ---
 
 今年是第二次參加[開源人年度聚會 COSCUP](http://coscup.org/)，很幸運的在 47 秒內搶到限量 500 張的門票，和[去年](https://blog.amowu.com/posts/2012-08-19-coscup-2012/)比較不一樣的地方：

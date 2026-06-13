@@ -3,6 +3,7 @@ title: '無限環境（ㄧ）Netlify Deploy Previews'
 description: '大綱'
 pubDate: 'Mar 01 2020'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 ## 大綱

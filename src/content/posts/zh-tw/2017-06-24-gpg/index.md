@@ -2,6 +2,7 @@
 title: '如何解決 GPG 失效的問題？'
 description: '我是用 cider 在管理自己的 dotfiles，然後前陣子因為 gnupg 的 formula 剛好一起被更新，導致我的 GPG signature verification 無法順利運作。'
 pubDate: 'Jun 24 2017'
+categories: [Tech]
 ---
 
 我是用 [cider](https://github.com/msanders/cider) 在管理自己的 dotfiles，然後前陣子因為 [gnupg](https://www.gnupg.org/) 的 formula 剛好一起被更新，導致我的 [GPG signature verification](https://github.com/blog/2144-gpg-signature-verification) 無法順利運作。

@@ -3,6 +3,7 @@ title: 'Pact Contract Testing'
 description: '初探 Pact & PactFlow'
 pubDate: 'Jul 14 2024'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 不知道大家有沒有聽過「契約測試」這個冷門的概念，它適合兩種對象：

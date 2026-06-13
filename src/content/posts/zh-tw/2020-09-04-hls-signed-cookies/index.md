@@ -3,6 +3,7 @@ title: 'Hahow for Business 如何保護串流內容？'
 description: '近來因疫情關係，不少 OTT 與線上教育等影音串流平台的流量急劇上升，本篇文章以 Hahow 為例，帶你了解隨選視訊背後的原理以及如何保護數位內容。'
 pubDate: 'Sep 04 2020'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 近來因疫情關係，不少 OTT 與線上教育等影音串流平台的流量急劇上升，本篇文章以 Hahow 為例，帶你了解隨選視訊背後的原理以及如何保護數位內容。

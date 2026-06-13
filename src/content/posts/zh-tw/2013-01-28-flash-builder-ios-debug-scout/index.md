@@ -2,6 +2,7 @@
 title: 'Flash Builder 4.7 iOS Debug'
 description: '這個月剛好玩到 flash on iOS，在部署到 iPad 時碰到些問題，筆記一下最後解決的步驟。'
 pubDate: 'Jan 28 2013'
+categories: [Tech]
 ---
 
 這個月剛好玩到 flash on iOS，在部署到 iPad 時碰到些問題，筆記一下最後解決的步驟。

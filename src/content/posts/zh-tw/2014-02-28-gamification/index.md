@@ -4,6 +4,7 @@ description: '在 2011 年，Gamification (遊戲化) 繼 Web 2.0，Mashup，Clo
  Gamification 將會是Social media、Big data、Internet of Things…'
 pubDate: 'Feb 28 2014'
 heroImage: './cover.jpg'
+categories: [Tech]
 ---
 
 > *在 2011 年，*[*Gamification*](https://en.wikipedia.org/wiki/Gamification)* (遊戲化) 繼 *[*Web 2.0*](https://en.wikipedia.org/wiki/Web_2.0)*，*[*Mashup*](https://goo.gl/3mWtjK)*，*[*Cloud*](https://en.wikipedia.org/wiki/Cloud_computing)*，*[*Freemium*](https://en.wikipedia.org/wiki/Freemium)* 之後，成為網路上科技的熱門關鍵詞。

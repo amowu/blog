@@ -3,6 +3,7 @@ title: '如何優雅地在 Mac 上使用 dotfiles？'
 description: '註：這篇文章的原始碼放在 GitHub ，會以上面的更新為主。'
 pubDate: 'Jan 29 2015'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 註：這篇文章的原始碼放在 [GitHub](https://github.com/amowu/dotfiles) ，會以上面的更新為主。

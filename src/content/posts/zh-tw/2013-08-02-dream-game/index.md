@@ -3,6 +3,7 @@ title: '我想做的遊戲'
 description: '進入遊戲業兩年多了，但網誌上跟遊戲相關的文章卻很少，所以在截稿前夕，就來寫一篇跟遊戲有關的文章吧！'
 pubDate: 'Aug 02 2013'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 ## 前言

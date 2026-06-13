@@ -3,6 +3,7 @@ title: '重點筆記《Hackers and Painters》'
 description: '我們的時代是程式設計師主導的時代，而偉大的程式設計師就是 hacker。'
 pubDate: 'Oct 01 2013'
 heroImage: './cover.jpg'
+categories: [Tech]
 ---
 
 * 我們的時代是程式設計師主導的時代，而偉大的程式設計師就是 hacker。

@@ -2,6 +2,7 @@
 title: 'Use getPixelRatio for HTML5 on retina'
 description: '如果用 HTML5 配 WebView 來作 App 的話，在 iPhone4 跟一些 Android 手機會碰到的解析度問題。'
 pubDate: 'Mar 04 2012'
+categories: [Tech]
 ---
 
 如果用 HTML5 配 WebView 來作 App 的話，在 iPhone4 跟一些 Android 手機會碰到的解析度問題。

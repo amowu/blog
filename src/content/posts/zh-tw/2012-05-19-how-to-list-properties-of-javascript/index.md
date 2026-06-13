@@ -2,6 +2,7 @@
 title: 'How to list the properties of a javascript object'
 description: '本篇參考 stackoverflow 的 How to list the properties of a javascript object'
 pubDate: 'May 19 2012'
+categories: [Tech]
 ---
 
 本篇參考 [stackoverflow](http://stackoverflow.com/) 的 [How to list the properties of a javascript object](http://stackoverflow.com/questions/208016/how-to-list-the-properties-of-a-javascript-object)

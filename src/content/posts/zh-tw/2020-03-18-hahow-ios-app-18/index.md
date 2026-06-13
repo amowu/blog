@@ -3,6 +3,7 @@ title: 'Hahow 為什麼沒有 iOS App？'
 description: '大綱'
 pubDate: 'Mar 18 2020'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 ## 大綱

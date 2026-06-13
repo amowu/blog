@@ -3,6 +3,7 @@ title: 'Mock Server＆契約測試'
 description: '這篇文章會介紹如何運用 Mock Server 和 Integration Contract Test（契約測試）解決一些在前後端分離的開發環境底下會碰到的問題。'
 pubDate: 'Aug 26 2017'
 heroImage: './cover.jpg'
+categories: [Tech]
 ---
 
 這篇文章會介紹如何運用 Mock Server 和 Integration Contract Test（契約測試）解決一些在前後端分離的開發環境底下會碰到的問題。

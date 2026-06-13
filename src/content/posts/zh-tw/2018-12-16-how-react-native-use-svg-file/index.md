@@ -3,6 +3,7 @@ title: '如何在 React Native 使用 SVG 向量圖檔'
 description: '問題'
 pubDate: 'Dec 16 2018'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 ## 問題

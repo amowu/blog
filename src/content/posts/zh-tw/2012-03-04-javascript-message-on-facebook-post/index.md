@@ -2,6 +2,7 @@
 title: 'Javascript message on Facebook post feed'
 description: '之前在使用Facebook API的時候碰到的問題,，筆記一下。'
 pubDate: 'Mar 04 2012'
+categories: [Tech]
 ---
 
 之前在使用Facebook API的時候碰到的問題,，筆記一下。

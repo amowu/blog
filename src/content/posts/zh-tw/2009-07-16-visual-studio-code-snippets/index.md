@@ -2,6 +2,7 @@
 title: 'Visual Studio Code Snippets'
 description: '最近在看 聖殿祭司寫的 ASP.NET 3.5 專家技術手冊 ，上面提到 Visual Studio 2005 之後，提供一個很不錯的功能叫做 Code Snippets（程式碼片段），這是一個可以快速產生常用程式碼的好東西。'
 pubDate: 'Jul 16 2009'
+categories: [Tech]
 ---
 
 最近在看 [聖殿祭司](http://blog.sina.com.tw/dotnet/)寫的 [ASP.NET 3.5 專家技術手冊](http://findbook.tw/book/9789861816524/basic) ，上面提到 Visual Studio 2005 之後，提供一個很不錯的功能叫做 Code Snippets（程式碼片段），這是一個可以快速產生常用程式碼的好東西。

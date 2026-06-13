@@ -3,6 +3,7 @@ title: 'Real-time Server Components'
 description: '打破無狀態伺服器的限制：利用 Durable Objects 和 React Server Components 構建即時多人應用'
 pubDate: 'Jun 08 2024'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 打破無狀態伺服器的限制：利用 Durable Objects 和 React Server Components 構建即時多人應用

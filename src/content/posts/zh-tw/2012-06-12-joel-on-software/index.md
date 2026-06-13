@@ -3,6 +3,7 @@ title: '讀書心得 約耳趣談軟體'
 description: '以下是節錄一些這本書覺得還不錯的點'
 pubDate: 'Jun 12 2012'
 heroImage: './cover.png'
+categories: [Tech]
 ---
 
 以下是節錄一些這本書覺得還不錯的點

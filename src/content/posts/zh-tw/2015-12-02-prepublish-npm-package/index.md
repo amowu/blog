@@ -2,6 +2,7 @@
 title: '如何在發布自己的 NPM package 之前打包檔案'
 description: '最近 Bower 宣布停止維護，所以許多前端的 packages 都移到了 NPM 上，甚至連 Grunt 和 Gulp 這類 build tools 都有要被 NPM scripts 取代的趨勢。'
 pubDate: 'Dec 02 2015'
+categories: [Tech]
 ---
 
 最近 [Bower](http://bower.io/) 宣布停止維護，所以許多前端的 packages 都移到了 [NPM](https://www.npmjs.com/) 上，甚至連 [Grunt](http://gruntjs.com/) 和 [Gulp](http://gulpjs.com/) 這類 build tools 都有要被 NPM scripts 取代的趨勢。

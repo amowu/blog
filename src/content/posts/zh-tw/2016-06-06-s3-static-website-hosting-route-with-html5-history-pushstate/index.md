@@ -2,6 +2,7 @@
 title: 'Amazon S3 正確處理 HTML5 History 路由問題'
 description: '如果你是使用 Angular、React 或是 Vue 來開發 SPA（單頁面應用），並且放在 Amazon S3 Static Website Hosting 上的話，那麼你會碰到 URL routing 的問題。'
 pubDate: 'Jun 06 2016'
+categories: [Tech]
 ---
 
 如果你是使用 Angular、React 或是 Vue 來開發 SPA（單頁面應用），並且放在 [Amazon S3 Static Website Hosting](http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html) 上的話，那麼你會碰到 URL routing 的問題。
