@@ -1,0 +1,454 @@
+---
+title: 'Claude Code + VOICEVOX：二次元女僕語音提示設定教學'
+description: '一步步設定 Claude Code Hooks，從 macOS 內建語音指令到 VOICEVOX 純後台引擎，打造不用盯著螢幕、聽聲音就知道「等待許可」或「任務完成」的語音通知工作流。'
+pubDate: 'Jul 12 2026'
+heroImage: './cover.png'
+categories: [Tech]
+---
+
+import { Image } from 'astro:assets';
+
+import demo1 from './demo1.mp4';
+import demo2 from './demo2.mp4';
+import vtt1 from './demo1.vtt';
+import vtt2 from './demo2.vtt';
+import image1 from './image1.png';
+import image2 from './image2.png';
+
+## 前言
+
+在使用 Claude Code 的過程中，經常會遇到需要等待授權或任務完成的情況。為了讓你能夠即時收到這些通知，我們可以利用 Claude Code 提供的 Hooks 來實現語音提示。
+
+本文將介紹如何使用 macOS 內建的指令以及開源的 VOICEVOX 軟體來實現二次元女僕語音提示，讓你的工作流程更加高效和有趣。
+
+### Demo
+
+等待許可：
+
+<video controls width="50%">
+  <source src={demo1} type="video/mp4" />
+  <track src={vtt1} kind="subtitles" srclang="ja" label="Japanese" default />
+</video>
+
+任務完成：
+
+<video controls width="50%">
+  <source src={demo2} type="video/mp4" />
+  <track src={vtt2} kind="subtitles" srclang="ja" label="Japanese" default />
+</video>
+
+## 什麼是 Claude Code Hooks？
+
+Hooks 是 Claude Code 提供的一項自動化機制，它們就像是 AI 行為的**中間件（Middleware）**。
+
+Hooks 允許開發者在 Claude Code 運行的特定生命週期（例如：執行指令前、修改程式碼後、工作階段開始時），自動觸發自定義的 Shell 指令、HTTP 請求或 AI 提示詞。這提供了對 AI 行為的**確定性控制**，確保某些安全規則或自動化任務百分之百會執行，而不需要盲目依賴大語言模型（LLM）去「記憶」或「選擇」遵守提示詞。
+
+設定 Hooks 主要有兩種方式：透過命令列的**互動式指令**，或是**手動編輯 settings.json 檔案**。
+
+這裡我們選擇手動編輯全域（Global）範圍的 `~/.claude/settings.json`。
+
+打開檔案之後，應該會看到 `hooks` 這個欄位：
+
+```json
+{
+  "hooks": {...}
+}
+```
+
+我們可以新增或修改 `Stop` 這個 hook，讓它在任務完成時自動唸出「任務完成」：
+
+```json
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "say \"任務完成\""
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+### 什麼是 `say`？
+
+`say` 是 macOS 內建的指令，它的功能是文字轉語音（Text-to-Speech，TTS）。
+
+簡單來說，`say` 是**你輸入什麼字，Mac 就直接「唸」給你聽**。它非常適合放在終端機（Terminal）或自動化腳本中。
+
+```bash
+say "任務完成"
+```
+
+你可以直接複製貼上到 Terminal 試試效果。
+
+### 加上提示音效
+
+除了唸出語音之外，我們還可以加上 macOS 內建的提示音效，讓整個通知更有存在感。
+
+```bash
+afplay /System/Library/Sounds/Glass.aiff && say "任務完成"
+```
+
+同樣，你可以直接複製貼上到 Terminal 試試效果。
+
+### 什麼是 `afplay`？
+
+`afplay`（全稱 Audio File Play）是另一個 macOS 系統內建的**命令列音訊播放器**。
+
+簡單來說，它讓你可以不用打開「音樂」App 或 QuickTime，直接在終端機裡面透過指令來播放音樂或音效檔案。
+
+<figure>
+  <Image src={image1} alt="macOS 內建音效檔案清單，位於 /System/Library/Sounds/" />
+  <figcaption>macOS 內建音效</figcaption>
+</figure>
+
+### `Notification` Hook
+
+除了 `Stop` 之外，還可以使用 `Notification` 這個泛用的 Hook 來播放其它通知：
+
+```json
+{
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Funk.aiff && say \"等待許可\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Glass.aiff && say \"任務完成\""
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+## VS Code 的侷限
+
+我自己習慣使用 [Claude Code for VS Code](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) 擴充功能（extension）多於 CLI，因為它提供了更完整的 IDE 體驗，透過直觀的圖形化介面與視覺化管理，免去切換視窗的繁瑣，讓 AI 協作更流暢、專注且高效。
+
+但是，這個 extension 目前有一個問題，就是 `Notification` Hook 無法正常運作。
+
+`Notification` Hook 原本是為終端機模式（CLI）設計的，當遇到等待授權或閒置時，用來通知可能已切到其它視窗的你。但在 VS Code extension 裡，這些狀態會被 IDE 的原生 UI 直接接手，核心便不再廣播 `Notification`，Hook 因此失效。`Stop` 則屬於核心生命週期，任何介面下結束對話都會觸發，不受影響。
+
+### 方案 A：VS Code 擴充功能
+
+可以安裝社群專門修補此問題的 VS Code extension，例如 [Claude Notifier](https://marketplace.visualstudio.com/items?itemName=SingularityInc.claude-notifier)。
+
+但是 Claude Notifier 的問題是無法自訂通知內容。
+
+### 方案 B：改用其它 Hooks（推薦）
+
+另一個解決方法是直接改用其它 Hooks 來取代 `Notification`。
+
+Hooks 的種類：
+
+| 事件名稱              | 觸發時機                                            | 是否可阻斷 | 常見應用場景                                        |
+| --------------------- | --------------------------------------------------- | ---------- | --------------------------------------------------- |
+| `SessionStart`        | 新的工作階段啟動或恢復時                            | 否         | 注入專案上下文、檢查環境變數（如 Docker 是否啟動）  |
+| `UserPromptSubmit`    | 使用者送出提示詞，Claude 開始思考前                 | 是         | 敏感資訊過濾、自動補全專案規則（Context Injection） |
+| `UserPromptExpansion` | 當輸入的斜線指令（Slash commands）展開為 Prompt 時  | 是         | 調整擴充後的 Prompt 內容                            |
+| `PreToolUse`          | Claude 準備呼叫任何工具（如 Bash, Edit, Write）之前 | 是         | 安全防火牆（如：封鎖 `rm -rf`、禁止修改 `.env`）    |
+| `PermissionRequest`   | 系統彈出工具執行授權提示（Y/N）時                   | 是         | 自動授權特定安全工具，減少人工確認                  |
+| `PostToolUse`         | 工具成功執行完畢且回傳結果之後                      | 否         | 自動執行代碼格式化（如 Prettier）、自動跑 Linter    |
+| `PostToolUseFailure`  | 工具執行失敗時                                      | 否         | 錯誤日誌分析、自動化環境修復                        |
+| `SubagentStart`       | Claude 呼叫 Agent 工具派生出子代理（Subagent）時    | 否         | 初始化子代理的環境                                  |
+| `SubagentStop`        | Subagent 完成任務並結束時                           | 是         | 驗證子代理產出的程式碼品質                          |
+| `Stop`                | Claude 完成該輪對話的所有回應時                     | 是         | 最終程式碼品質把關（Quality Gate）、發送通知        |
+| `StopFailure`         | Claude 產生回應失敗或中斷時                         | 否         | 記錄錯誤、清理暫存檔                                |
+| `SessionEnd`          | 使用者關閉或終止 Claude Code 工作階段時             | 否         | 清理環境、匯出本次對話的 Audit Log                  |
+
+以這邊的使用情境來說，`PermissionRequest` Hook 是最適合的選擇，因為它會在系統彈出授權提示、等待使用者許可時觸發，讓我們可以自動播放通知音效：
+
+```diff
+{
+  "hooks": {
+-    "Notification": [...],
++    "PermissionRequest": [
++      {
++        "matcher": "",
++        "hooks": [
++          {
++            "type": "command",
++            "command": "afplay /System/Library/Sounds/Funk.aiff && say \"等待許可\""
++          }
++        ]
++      }
++    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Glass.aiff && say \"任務完成\""
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+## 進階玩法：VOICEVOX
+
+如果只是使用系統內建的語音指令，雖然方便，但聲音比較單調，缺乏個性。為了讓通知更有趣，我們可以使用 VOICEVOX 來實現二次元角色語音提示。
+
+### 什麼是 VOICEVOX？
+
+VOICEVOX 是一款由日本開發者所開發的**免費、開源 AI 文字轉語音（TTS）軟體**。
+
+<figure>
+  <Image src={image2} alt="VOICEVOX 應用程式介面，左側可選擇角色與語音風格" />
+</figure>
+
+過去像 VOCALOID（如初音未來）這類的軟體主要是用來「唱歌」，而語音合成軟體則多半價格高昂。VOICEVOX 的出現徹底打破了門檻，讓沒有預算請配音員的獨立影片創作者，也能輕鬆做出高品質的配音影片。
+
+### 安裝 VOICEVOX
+
+前往 [VOICEVOX 官方網站](https://voicevox.hiroshiba.jp/)：
+
+1. ダウンロード（下載）
+1. Mac → CPU（Intel or Apple） → インストーラー（Installer）
+1. 安裝應用程式
+1. 打開 VOICEVOX，就會看到可以選擇的角色與語音風格。
+
+### 建立腳本
+
+效仿 `say` 指令，建立一個 `say_maid` 腳本檔案 `~/.scripts/say_maid`（路徑可自行決定）：
+
+```bash
+#!/bin/zsh
+
+# 檢查是否有輸入文字
+if [ -z "$1" ]; then
+  echo "請輸入你想讓女僕說的話，例如：say_maid '主人，歡迎回來'"
+  exit 1
+fi
+
+# 1. 產生語音 Query JSON
+curl -s -X POST "http://localhost:50021/audio_query" \
+     --url-query "speaker=2" \
+     --url-query "text=$1" > /tmp/voicevox_query.json
+
+# 2. 合成語音並下載為 wav 檔
+curl -s -H "Content-Type: application/json" \
+     -X POST -d @/tmp/voicevox_query.json \
+     "http://localhost:50021/synthesis" \
+     --url-query "speaker=2" > /tmp/maid_voice.wav
+
+# 3. 使用 afplay 播放出來
+afplay /tmp/maid_voice.wav
+```
+
+給予執行權限：
+
+```bash
+chmod +x ~/.scripts/say_maid
+```
+
+在 Terminal 測試效果：
+
+```bash
+~/.scripts/say_maid "終わりましたよー！ご主人様？お疲れ様です！"
+```
+
+```bash
+~/.scripts/say_maid "ねえ、ご主人様、早く……私を確認して？"
+```
+
+沒意外的話，應該就可以聽到「四国めたん」的聲音了（VOICEVOX 只支援日文）。
+
+這兩句也是開頭 demo 的語音內容，中文的意思大致是：
+
+- 「任務完成了喔！主人？辛苦了！」
+- 「喂，主人，快點……確認我吧？」
+
+聽到那句軟軟的日文從終端機傳出來的瞬間，是不是連盯著進度條的等待都變得有趣了一些？
+
+### Speaker ID
+
+如果想要使用其它角色或風格，可以透過 VOICEVOX 的 API 來查詢 Speaker ID，以「春日部つむぎ」為例：
+
+1. 打開 [http://localhost:50021/speakers](http://localhost:50021/speakers)
+1. 在 JSON 回傳結果中找到 `name` 為「春日部つむぎ」的物件，裡面有 `styles.id`，可以看到它的 Speaker ID 就是 8：
+
+```json
+{
+  ...
+  {
+    "name": "春日部つむぎ",
+    "speaker_uuid": "35b2c544-660e-401e-b503-0e14c635303a",
+    "styles": [
+      {
+        "name": "ノーマル",
+        "id": 8,
+        "type": "talk"
+      }
+    ],
+    "version": "0.16.1",
+    "supported_features": {
+      "permitted_synthesis_morphing": "ALL"
+    }
+  },
+  ...
+}
+```
+
+3. 將 `say_maid` 腳本中的 `speaker=2` 改成 `speaker=8`，就可以使用「春日部つむぎ」的聲音了：
+
+```diff
+...
+
+# 1. 產生語音 Query JSON
+curl -s -X POST "http://localhost:50021/audio_query" \
+-     --url-query "speaker=2" \
++     --url-query "speaker=8" \
+     --url-query "text=$1" > /tmp/voicevox_query.json
+
+# 2. 合成語音並下載為 wav 檔
+curl -s -H "Content-Type: application/json" \
+     -X POST -d @/tmp/voicevox_query.json \
+     "http://localhost:50021/synthesis" \
+-     --url-query "speaker=2" > /tmp/maid_voice.wav
++     --url-query "speaker=8" > /tmp/maid_voice.wav
+
+...
+```
+
+### 背景執行
+
+到這裡，`say_maid` 腳本已經可以正常運作了，但每次執行前都需要先手動打開 VOICEVOX 應用，這樣就有點麻煩。
+
+我們可以在腳本中加入自動啟動 VOICEVOX 的功能：
+
+```diff
+#!/bin/zsh
+
+# 檢查是否有輸入文字
+if [ -z "$1" ]; then
+  echo "請輸入你想讓女僕說的話，例如：say_maid '主人，歡迎回來'"
+  exit 1
+fi
+
++ # 偵測 Port 50021 是否有在運作
++ if ! nc -z localhost 50021 2>/dev/null; then
++   echo "正在為您默默喚醒女僕..."
++   open -g -a VOICEVOX
++
++   # 循環等待，直到伺服器完全啟動成功為止
++   while ! nc -z localhost 50021 2>/dev/null; do
++     sleep 0.5
++   done
++   echo "女僕已就位！"
++ fi
+
+# 1. 產生語音 Query JSON
+...
+```
+
+但是，這樣的做法會啟動整個 VOICEVOX GUI 應用程式，對於只想要使用 TTS 功能的使用者來說，可能還是會覺得有點彆扭。
+
+好消息是，VOICEVOX 內建了純後台的引擎程式，直接啟動它就可以使用 TTS 功能，而不需要打開整個 GUI。
+
+首先，我們需要找到 VOICEVOX 的引擎程式路徑：
+
+```bash
+find /Applications/VOICEVOX.app \( -name "voicevox_engine" -o -name "run" \)
+```
+
+以我的環境為例，找到的路徑會是：
+
+```
+/Applications/VOICEVOX.app/Contents/Resources/vv-engine/run
+```
+
+修改 `say_maid` 腳本，將啟動 VOICEVOX 的方式改成：
+
+```diff
+#!/bin/zsh
+
+...
+
+# 偵測 Port 50021 是否有在運作
+if ! nc -z localhost 50021 2>/dev/null; then
+  echo "正在為您默默喚醒女僕..."
+-  open -g -a VOICEVOX
++  # 直接啟動 VOICEVOX 內建的純後台引擎，並將輸出丟棄 (> /dev/null 2>&1 &)
++  /Applications/VOICEVOX.app/Contents/Resources/vv-engine/run > /dev/null 2>&1 &
+
+  # 循環等待，直到伺服器完全啟動成功為止
+  while ! nc -z localhost 50021 2>/dev/null; do
+    sleep 0.5
+  done
+  echo "女僕已就位！"
+fi
+
+...
+```
+
+搞定！現在，當你執行 `say_maid` 時，如果 VOICEVOX 還沒啟動，它會自動在背景啟動，並且不會打開 GUI。
+
+最後，我們只要把 `~/.claude/settings.json` 中的 `say` 指令改成 `say_maid`，就可以在 Claude Code 的 Hooks 中使用二次元女僕的語音提示了：
+
+```diff
+{
+  "hooks": {
+    "PermissionRequest": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+-            "command": "afplay /System/Library/Sounds/Funk.aiff && say \"等待許可\""
++            "command": "afplay /System/Library/Sounds/Funk.aiff && ~/.scripts/say_maid \"ねえ、ご主人様、早く……私を確認して？\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+-            "command": "afplay /System/Library/Sounds/Glass.aiff && say \"任務完成\""
++            "command": "afplay /System/Library/Sounds/Glass.aiff && ~/.scripts/say_maid \"終わりましたよー！ご主人様？お疲れ様です！\""
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+## 總結
+
+從一開始的 `say`「任務完成」，到最後讓「四国めたん」在背景默默待命、任務結束時對你說一聲「お疲れ様です」，我們其實只做了一件事：把 Claude Code 的等待與完成，變成能被聽見的訊號。
+
+回顧整個過程：
+
+- **Hooks 是核心**：`Stop` 與 `PermissionRequest` 讓「任務完成」和「等待許可」這兩個關鍵時刻，能夠確定性地觸發通知，不必盯著螢幕。
+- **系統內建就很夠用**：`say` 與 `afplay` 兩個 macOS 原生指令，零安裝就能做出堪用的語音提示。
+- **VS Code 的坑**：Claude Code extension 下 `Notification` Hook 會失效，改用 `PermissionRequest` 是更乾淨的解法。
+- **VOICEVOX 進階玩法**：包成 `say_maid` 腳本、查詢 Speaker ID 切換角色，再用純後台引擎自動喚醒，就能在不打開 GUI 的情況下獲得高品質的角色語音。
+
+比起效率工具，這更像是一點為日常寫程式加溫的小巧思。當冰冷的終端機開始有了聲音與個性，等待授權的空檔、任務完成的瞬間，也就多了一絲陪伴的溫度。希望這篇文章能為忙於工作的你，帶來一點會心一笑的樂趣。
