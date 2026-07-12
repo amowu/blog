@@ -2,6 +2,7 @@
 import rss from '@astrojs/rss';
 import type { APIRoute } from 'astro';
 import { experimental_AstroContainer as AstroContainer } from 'astro/container';
+import mdxRenderer from '@astrojs/mdx/server.js';
 import { render } from 'astro:content';
 import sanitizeHtml from 'sanitize-html';
 import { SITE } from '~/config';
@@ -34,6 +35,10 @@ export const GET: APIRoute = async (context) => {
 
   const posts = await getPosts(locale);
   const container = await AstroContainer.create();
+  // `.mdx` posts compile to JSX components; the container needs the MDX
+  // ('astro:jsx') server renderer to render their `Content`, otherwise
+  // rendering throws `NoMatchingRenderer`. Plain `.md` posts don't need it.
+  container.addServerRenderer({ renderer: mdxRenderer });
 
   const items = await Promise.all(
     posts.map(async (post) => {
