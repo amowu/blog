@@ -39,7 +39,10 @@ const groups = groupByYearMonth(posts, locale);
                 {yearPosts.map((p) => (
                   <li>
                     <span class="day">
-                      {formatDate(p.data.pubDate, locale, { day: '2-digit' })}
+                      {/* 不用 formatDate：zh-TW 的 Intl 會把日補成 "10日"，
+                          多出的「日」會撐爆固定寬度的欄位、壓到右邊的月份上。
+                          這裡直接取數字補零，維持版型預期的 2 位數對齊。 */}
+                      {String(p.data.pubDate.getDate()).padStart(2, '0')}
                     </span>
                     <span class="month">
                       {formatDate(p.data.pubDate, locale, { month: 'short' })}
