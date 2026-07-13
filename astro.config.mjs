@@ -227,6 +227,17 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    build: {
+      // 小於 assetsInlineLimit（預設 4KB）的 asset 會被 Vite inline 成
+      // base64 data: URI。WebVTT 字幕檔通常只有幾百 bytes，會被 inline，
+      // 但瀏覽器基於安全限制不會從 data: URI 載入 <track> 的字幕 cue，
+      // 導致 production 環境字幕失效。回傳 false 讓 .vtt 一律輸出成真實
+      // 檔案；其餘 asset 回傳 undefined 走預設 inline 邏輯。
+      assetsInlineLimit: (filePath) => {
+        if (filePath.endsWith('.vtt')) return false;
+        return undefined;
+      },
+    },
   },
 
   experimental: {
