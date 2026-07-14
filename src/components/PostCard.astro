@@ -1,7 +1,7 @@
 ---
 import { SITE, type Locale } from '../config';
 import { formatDate, isoDate } from '../i18n/utils';
-import { type Post, postPath, heroImage, shouldShowHero } from '../utils/posts';
+import { type Post, postPath, heroImage } from '../utils/posts';
 import SmartImage from './SmartImage.astro';
 import { Icon } from 'astro-icon/components';
 
@@ -14,7 +14,12 @@ interface Props {
 const { post, locale, prioritizeLcp = false } = Astro.props;
 const href = postPath(post);
 const heroAsset = heroImage(post);
-const hasImage = Boolean(heroAsset) && shouldShowHero(post);
+// Whether featured images are enabled (per-post override → site default).
+// When enabled we always reserve the thumbnail column so every card shares
+// the same layout — posts without a `heroImage` get a placeholder instead.
+const featuredEnabled = post.data.showFeaturedImage ?? SITE.showFeaturedImages;
+const showThumb = featuredEnabled;
+const hasImage = Boolean(heroAsset) && featuredEnabled;
 const heroAlt = post.data.heroImageAlt ?? '';
 const isDynamicCardHeight = post.data.dynamicPostCardHeight ?? SITE.dynamicPostCardHeight;
 ---
@@ -24,36 +29,42 @@ const isDynamicCardHeight = post.data.dynamicPostCardHeight ?? SITE.dynamicPostC
     href={href}
     class:list={[
       'chirpy-card-link',
-      hasImage ? 'has-image' : 'no-image',
+      showThumb ? 'has-image' : 'no-image',
       isDynamicCardHeight ? 'dynamic-size' : 'fixed-size',
     ]}
   >
     {
-      hasImage && (
+      showThumb && (
         <div class="chirpy-card-image-wrap">
-          <SmartImage
-            src={heroAsset!}
-            alt={heroAlt}
-            class="chirpy-card-image"
-            loading={prioritizeLcp ? 'eager' : 'lazy'}
-            fetchpriority={prioritizeLcp ? 'high' : 'auto'}
-            widths={[384, 768, 960]}
-            sizes="(max-width: 767px) 100vw, 378px"
-            quality={75}
-          />
+          {hasImage ? (
+            <SmartImage
+              src={heroAsset!}
+              alt={heroAlt}
+              class="chirpy-card-image"
+              loading={prioritizeLcp ? 'eager' : 'lazy'}
+              fetchpriority={prioritizeLcp ? 'high' : 'auto'}
+              widths={[384, 768, 960]}
+              sizes="(max-width: 767px) 100vw, 378px"
+              quality={75}
+            />
+          ) : (
+            <div class="chirpy-card-image chirpy-card-placeholder" aria-hidden="true">
+              <Icon name="lucide:image" width={40} height={40} />
+            </div>
+          )}
         </div>
       )
     }
 
-    <div class:list={['chirpy-card-body', hasImage ? '' : 'full']}>
-      <h2 class:list={['chirpy-card-title', hasImage ? '' : 'compact']}>
+    <div class:list={['chirpy-card-body', showThumb ? '' : 'full']}>
+      <h2 class:list={['chirpy-card-title', showThumb ? '' : 'compact']}>
         {post.data.title}
       </h2>
 
       <p
         class:list={[
           'text-base-content/70 text-base',
-          hasImage ? 'mt-2 mb-3 line-clamp-2' : 'mt-1 mb-2 line-clamp-3',
+          showThumb ? 'mt-2 mb-3 line-clamp-2' : 'mt-1 mb-2 line-clamp-3',
         ]}
       >
         {post.data.description}
