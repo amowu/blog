@@ -408,6 +408,14 @@
   .chirpy-card-title.compact {
     @apply md:text-[1.4rem];
   }
+  /* Fixed-size cards get a fixed desktop height so every thumbnail is the
+     same size instead of following each card's body content. Dynamic-size
+     cards are intentionally left free to grow. */
+  @media (min-width: 768px) {
+    .chirpy-card-link.has-image.fixed-size {
+      height: 13rem;
+    }
+  }
   @media (min-width: 768px) {
     .chirpy-card-link.has-image.dynamic-size .chirpy-card-title {
       display: block;
@@ -428,6 +436,11 @@
   }
   .chirpy-card-image {
     @apply h-44 w-full object-cover md:min-h-0 md:flex-1 md:rounded-r-md;
+  }
+  /* Placeholder shown when a post has no hero image but featured images are
+     enabled — keeps image and no-image cards structurally identical. */
+  .chirpy-card-placeholder {
+    @apply bg-base-200 text-base-content/25 flex items-center justify-center;
   }
 }
 

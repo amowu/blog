@@ -35,18 +35,22 @@ if (lastPage > 1) push(lastPage);
 
 <nav
   aria-label={`${t('pagination.page')} ${currentPage} ${t('pagination.of')} ${lastPage}`}
-  class="my-10 flex items-center justify-between"
+  class="my-10 flex flex-wrap items-center justify-between gap-y-3"
 >
   {
     prev ? (
-      <a rel="prev" href={prev} class="btn btn-sm btn-ghost gap-1">
+      <a rel="prev" href={prev} aria-label={t('pagination.previous')} class="btn btn-sm btn-ghost gap-1">
         <Icon name="lucide:arrow-up" width={14} height={14} class="-rotate-90" />
-        {t('pagination.previous')}
+        <span class="hidden sm:inline">{t('pagination.previous')}</span>
       </a>
     ) : (
-      <button disabled class="btn btn-sm btn-ghost pointer-events-none gap-1 opacity-40">
+      <button
+        disabled
+        aria-label={t('pagination.previous')}
+        class="btn btn-sm btn-ghost pointer-events-none gap-1 opacity-40"
+      >
         <Icon name="lucide:arrow-up" width={14} height={14} class="-rotate-90" />
-        {t('pagination.previous')}
+        <span class="hidden sm:inline">{t('pagination.previous')}</span>
       </button>
     )
   }
@@ -73,13 +77,17 @@ if (lastPage > 1) push(lastPage);
 
   {
     next ? (
-      <a rel="next" href={next} class="btn btn-sm btn-ghost gap-1">
-        {t('pagination.next')}
+      <a rel="next" href={next} aria-label={t('pagination.next')} class="btn btn-sm btn-ghost gap-1">
+        <span class="hidden sm:inline">{t('pagination.next')}</span>
         <Icon name="lucide:arrow-up" width={14} height={14} class="rotate-90" />
       </a>
     ) : (
-      <button disabled class="btn btn-sm btn-ghost pointer-events-none gap-1 opacity-40">
-        {t('pagination.next')}
+      <button
+        disabled
+        aria-label={t('pagination.next')}
+        class="btn btn-sm btn-ghost pointer-events-none gap-1 opacity-40"
+      >
+        <span class="hidden sm:inline">{t('pagination.next')}</span>
         <Icon name="lucide:arrow-up" width={14} height={14} class="rotate-90" />
       </button>
     )
