@@ -14,6 +14,7 @@ import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import { remarkAsHtml } from './src/plugins/remark-ashtml.ts';
 import { remarkAlert } from './src/plugins/remark-alert.ts';
+import { rehypeTableWrap } from './src/plugins/rehype-table-wrap.ts';
 
 import { SITE } from './src/config';
 
@@ -159,6 +160,9 @@ export default defineConfig({
           rel: ['nofollow', 'noopener', 'noreferrer'],
         },
       ],
+      // Wide tables would otherwise overflow the article column and scroll
+      // the whole page sideways on mobile (issue #28).
+      rehypeTableWrap,
     ],
     gfm: true,
   },
