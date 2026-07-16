@@ -20,17 +20,33 @@ if (lastPage <= 1) return null;
 const prev = currentPage > 1 ? hrefForPage(currentPage - 1) : null;
 const next = currentPage < lastPage ? hrefForPage(currentPage + 1) : null;
 
-// Compact paginator: first, current-1, current, current+1, last (with ellipses).
-const numbers: Array<number | '…'> = [];
-const push = (n: number | '…') => {
-  if (numbers[numbers.length - 1] !== n) numbers.push(n);
+// Paginator: first, `siblings` pages either side of current, last (with ellipses).
+const buildPages = (siblings: number): Array<number | '…'> => {
+  const numbers: Array<number | '…'> = [];
+  const push = (n: number | '…') => {
+    if (numbers[numbers.length - 1] !== n) numbers.push(n);
+  };
+  push(1);
+  if (currentPage - siblings > 2) push('…');
+  for (
+    let p = Math.max(2, currentPage - siblings);
+    p <= Math.min(lastPage - 1, currentPage + siblings);
+    p++
+  )
+    push(p);
+  if (currentPage + siblings < lastPage - 1) push('…');
+  if (lastPage > 1) push(lastPage);
+  return numbers;
 };
-push(1);
-if (currentPage - 1 > 2) push('…');
-for (let p = Math.max(2, currentPage - 1); p <= Math.min(lastPage - 1, currentPage + 1); p++)
-  push(p);
-if (currentPage + 1 < lastPage - 1) push('…');
-if (lastPage > 1) push(lastPage);
+
+// A middle page needs 7 slots (1 … 4 5 6 … 12) ≈ 240px, which together with the
+// prev/next buttons no longer fits a 320px viewport. Below `sm` we drop the
+// sibling pages to keep the row on one line; shrinking the buttons instead would
+// push tap targets below an already-tight 32px.
+const pageSets = [
+  { numbers: buildPages(0), class: 'sm:hidden' },
+  { numbers: buildPages(1), class: 'hidden sm:inline-flex' },
+];
 ---
 
 <nav
@@ -39,7 +55,12 @@ if (lastPage > 1) push(lastPage);
 >
   {
     prev ? (
-      <a rel="prev" href={prev} aria-label={t('pagination.previous')} class="btn btn-sm btn-ghost gap-1">
+      <a
+        rel="prev"
+        href={prev}
+        aria-label={t('pagination.previous')}
+        class="btn btn-sm btn-ghost gap-1"
+      >
         <Icon name="lucide:arrow-up" width={14} height={14} class="-rotate-90" />
         <span class="hidden sm:inline">{t('pagination.previous')}</span>
       </a>
@@ -55,29 +76,41 @@ if (lastPage > 1) push(lastPage);
     )
   }
 
-  <ul class="join">
-    {
-      numbers.map((n) =>
-        n === '…' ? (
-          <li class="join-item btn btn-ghost btn-sm pointer-events-none">…</li>
-        ) : (
-          <li>
-            <a
-              href={hrefForPage(n)}
-              aria-current={n === currentPage ? 'page' : undefined}
-              class:list={['join-item btn btn-sm', n === currentPage ? 'btn-primary' : 'btn-ghost']}
-            >
-              {n}
-            </a>
-          </li>
-        ),
-      )
-    }
-  </ul>
+  {
+    /* Both sets are always rendered and toggled with `display`, so assistive
+       tech only ever sees the visible one. */
+    pageSets.map((set) => (
+      <ul class:list={['join', set.class]}>
+        {set.numbers.map((n) =>
+          n === '…' ? (
+            <li class="join-item btn btn-ghost btn-sm pointer-events-none">…</li>
+          ) : (
+            <li>
+              <a
+                href={hrefForPage(n)}
+                aria-current={n === currentPage ? 'page' : undefined}
+                class:list={[
+                  'join-item btn btn-sm',
+                  n === currentPage ? 'btn-primary' : 'btn-ghost',
+                ]}
+              >
+                {n}
+              </a>
+            </li>
+          ),
+        )}
+      </ul>
+    ))
+  }
 
   {
     next ? (
-      <a rel="next" href={next} aria-label={t('pagination.next')} class="btn btn-sm btn-ghost gap-1">
+      <a
+        rel="next"
+        href={next}
+        aria-label={t('pagination.next')}
+        class="btn btn-sm btn-ghost gap-1"
+      >
         <span class="hidden sm:inline">{t('pagination.next')}</span>
         <Icon name="lucide:arrow-up" width={14} height={14} class="rotate-90" />
       </a>
