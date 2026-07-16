@@ -37,6 +37,12 @@ const isDynamicCardHeight = post.data.dynamicPostCardHeight ?? SITE.dynamicPostC
       showThumb && (
         <div class="chirpy-card-image-wrap">
           {hasImage ? (
+            /* `layout="none"` opts out of Astro's responsive image styles. Those
+               are injected unlayered as `:where([data-astro-image]){height:auto}`,
+               and unlayered rules beat anything in `@layer components` regardless
+               of specificity — so they would silently override the card's own
+               sizing and let every thumbnail follow its aspect ratio instead.
+               `widths`/`sizes` below still produce a srcset. */
             <SmartImage
               src={heroAsset!}
               alt={heroAlt}
@@ -45,6 +51,7 @@ const isDynamicCardHeight = post.data.dynamicPostCardHeight ?? SITE.dynamicPostC
               fetchpriority={prioritizeLcp ? 'high' : 'auto'}
               widths={[384, 768, 960]}
               sizes="(max-width: 767px) 100vw, 378px"
+              layout="none"
               quality={75}
             />
           ) : (
