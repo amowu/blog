@@ -558,6 +558,18 @@
     height: auto;
     object-fit: cover;
   }
+  /* Wide tables scroll inside their own container instead of pushing the
+     page sideways — a table can't lay out below its min-content width, so
+     `w-full` alone doesn't contain one. Emitted by rehype-table-wrap. */
+  .prose-chirpy .table-wrap {
+    @apply my-6 overflow-x-auto;
+  }
+  .prose-chirpy .table-wrap:focus-visible {
+    @apply outline-primary rounded-sm outline-2 outline-offset-2;
+  }
+  .prose-chirpy .table-wrap > table {
+    @apply my-0;
+  }
   .prose-chirpy table {
     @apply my-6 w-full border-collapse text-left text-sm;
   }
