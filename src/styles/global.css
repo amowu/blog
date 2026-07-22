@@ -410,10 +410,16 @@
   }
   /* Fixed-size cards get a fixed desktop height so every thumbnail is the
      same size instead of following each card's body content. Dynamic-size
-     cards are intentionally left free to grow. */
+     cards are intentionally left free to grow.
+
+     `grid-template-rows` pins the single md row to that height: an implicit
+     row is content-sized and would otherwise grow past it (a two-line title
+     needs ~212px), taking the thumbnail with it. 13.5rem clears the tallest
+     body the clamps allow — 2-line title + 2-line description + meta. */
   @media (min-width: 768px) {
     .chirpy-card-link.has-image.fixed-size {
-      height: 13rem;
+      height: 13.5rem;
+      grid-template-rows: 100%;
     }
   }
   @media (min-width: 768px) {
